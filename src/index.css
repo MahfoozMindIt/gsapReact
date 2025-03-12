@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@theme{
+  --font-primary:"Rethink Sans";
+  --color-primary:#6C48B6;
+  --color-secondary:#F3B1F9;
+  --color-hover:#2C1457;
+  --color-danger:#A071CA;
+
+
+}
