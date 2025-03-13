@@ -16,6 +16,7 @@ import "../styles/Home.css";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
@@ -169,7 +170,8 @@ useEffect(() => {
 <nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
   <ul className=' gap-10 xl:flex hidden items-center'>
     <li className='l1'>Home</li>
-    <li className='l2'>Services</li>
+    <Link to='/cards'>
+    <li className='l2'>Cards</li></Link>
     <li className='l3'>Contact</li>
   </ul>
   <h3 className='logo '>LoGo</h3>

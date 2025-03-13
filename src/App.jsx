@@ -8,6 +8,7 @@ import ScrollToTop from './components/Scroll';
 const Home=lazy(()=>import('./pages/Home'));
 const Services=lazy(()=>import('./pages/Services'))
 const Contact=lazy(()=>import('./pages/Contact'))
+const Cards=lazy(()=>import('./pages/Cards'))
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route index element={<Home/>}/>
        <Route path='/services' element={<Services/>} />
        <Route path='/contact' element={<Contact/>} />
+       <Route path='/cards' element={<Cards/>} />
         </Route>
       </Routes></ScrollToTop>
     </Router>
