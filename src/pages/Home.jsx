@@ -174,7 +174,7 @@ useEffect(() => {
     <li className='l2'>Cards</li></Link>
     <li className='l3'>Contact</li>
   </ul>
-  <h3 className='logo '>LoGo</h3>
+  <Link to='/cards' className='logo '>LoGo</Link>
   <div className='navButton'>
     
   <button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
