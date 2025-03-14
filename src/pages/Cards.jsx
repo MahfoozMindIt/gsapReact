@@ -20,15 +20,25 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaPlus } from 'react-icons/fa';
+import { RiArrowDropDownLine } from 'react-icons/ri';
 gsap.registerPlugin(ScrollTrigger);
 
-const Home = () => {
+const Cards = () => {
 
 
 
   const [isHovered , setIsHovered]=useState(false);
   const [isHovered2 , setIsHovered2]=useState(false);
   const [isHovered3 , setIsHovered3]=useState(false);
+  const [openIndex , setOpenIndex]=useState(null);
+
+
+  const toggleFaq = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
+
+
 
   const sectionFour = {
     trigger: "#sec4MainDIV",
@@ -360,6 +370,53 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 </main></section>
 
+{/* 5th section frequently asked questions*/}
+
+<section className=' w-full flex section3 justify-center pt-44 section3Cards'>
+<main className='md:w-[90%] w-[95%] widthCards flex flex-col items-center justify-center gap-20' >
+<div className='flex flex-col items-center justify-center gap-5'>
+<div className='flex justify-center w-full '>
+<h2 className='text-center text-5xl  lg:text-6xl xl:text-7xl  sec3h font-extrabold text-hover flex items-center justify-center flex-wrap gap-3 '>Frequently Asked Questions
+</h2>
+</div>
+
+<div className='w-full flex justify-center pt-2'>
+<p className='lg:w-[50%] w-[85%] md:w-[70%] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+
+</div></div>
+{/* frequently asked questions.... */}
+<section className="lg:w-[75%] md:w-[90%] w-full flex-col flex gap-5">
+      {[0, 1,2,3,4,5,6,7,8].map((index) => (
+        <div
+          key={index}
+          className="bg-primary gap-10 flex w-full rounded-full items-center p-5"
+        >
+          <button
+            onClick={() => toggleFaq(index)}
+            className={`bg-hover cursor-pointer duration-300 transition-all text-white p-1 rounded-full ${
+              openIndex === index ? "rotate-180" : "rotate-0"
+            }`}
+          >
+            <RiArrowDropDownLine className="text-4xl" />
+          </button>
+          <div className="text-white">
+            <h2 className="text-white text-xl font-semibold">
+              Add commonly asked question here
+            </h2>
+            {openIndex === index && (
+              <p className="pt-5 transition-all duration-300">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Est,
+                temporibus magni repellendus voluptatum libero eum?
+              </p>
+            )}
+          </div>
+        </div>
+      ))}
+    </section>
+
+</main></section>
+
+
 {/* 4rth section starts */}
 <section className=' w-full flex justify-center pt-44 '>
 <main className='md:w-[90%] w-[95%] widthCards flex xl:flex-row flex-col  justify-center items-center  gap-20 section3' >
@@ -391,4 +448,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
   )
 }
 
-export default Home;
+export default Cards;
