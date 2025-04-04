@@ -369,12 +369,21 @@ sell crypto.</h2>
 <img src={boyCard} alt="" className=''/>
 </div>
 <div className='xl:w-[50%]'>
-<div className='w-[85%]'>
-<h2 className='text-8xl font-extrabold'>Try our credit card for a free 30+ days</h2>
+<div className='w-[85%] flex flex-col gap-10'>
+<h2 className='text-7xl font-extrabold'>Try our credit card for a free 30+ days</h2>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> varius enim in eros elementum.</p>
 <div className='flex justify-between'>
   <div>
-    <h3 className=''>23+</h3>
+    <h3 className='text-secondary text-7xl font-extrabold'>23+</h3>
+    <p className='font-semibold text-xl'>Rewards</p>
+  </div>
+  <div>
+    <h3 className='text-secondary text-7xl font-extrabold'>2%</h3>
+    <p className='font-semibold text-xl'>Interest Rate</p>
+  </div>
+  <div>
+    <h3 className='text-secondary text-7xl font-extrabold'>1mill</h3>
+    <p className='font-semibold text-xl'>Users</p>
   </div>
 
 </div>
