@@ -231,7 +231,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 
 <div className='flex flex-col items-center justify-center gap-5'>
 <h2 className='text-center text-4xl lg:text-5xl  xl:text-6xl sec3h font-extrabold text-hover flex gap-3 '>
-<span className='sec2h1'>MetaX makes</span> <div className='flex flex-col text-primary  justify-center md:justify-start'><span className='sec2h2'>millions</span><span><img src={sec2} alt="" className='lg:w-52 w-[100px] sec2h4'/></span></div> <span className='sec2h3'>of lives easier</span>
+<span className='sec2h1'>XCards makes</span> <div className='flex flex-col text-primary  justify-center md:justify-start'><span className='sec2h2'>millions</span><span><img src={sec2} alt="" className='lg:w-52 w-[100px] sec2h4'/></span></div> <span className='sec2h3'>of lives easier</span>
 </h2>
 </div>
 
@@ -318,7 +318,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 <main className='md:w-[90%] w-[95%] widthCards flex flex-col items-center justify-center gap-20' >
 <div className='flex flex-col items-center justify-center gap-5'>
 <div className='flex justify-center w-full '>
-<h2 className='text-center text-5xl  lg:text-7xl xl:text-8xl  sec3h font-extrabold text-hover flex items-center justify-center flex-wrap gap-3 '><span className='sec3Span1'>The </span> <span className='sec3Span2'>Metax </span> <span className='sec3Span3'>Card </span> <span className='sec3Span4'>is truly </span> <span className='sec3Span5 text-primary'>special</span>
+<h2 className='text-center text-5xl  lg:text-7xl xl:text-8xl  sec3h font-extrabold text-hover flex items-center justify-center flex-wrap gap-3 '><span className='sec3Span1'>The </span><span className='sec3Span3'>XCard </span> <span className='sec3Span4'>is truly </span> <span className='sec3Span5 text-primary'>special</span>
 </h2>
 </div>
 

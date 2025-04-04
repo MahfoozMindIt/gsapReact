@@ -6,11 +6,13 @@ import para from "../assets/paragraphImage.webp"
 import paraPig from "../assets/paraPig.webp";
 import sec31 from "../assets/home3-1.png";
 import sec32 from "../assets/sec32.webp";
+import coins from "../assets/coins.webp";
+import boyCard from "../assets/boyCard.webp";
 import sec5 from "../assets/Image.png";
-import { FaHandHoldingUsd } from "react-icons/fa";
+import { FaCloudMeatball, FaCommentDollar, FaHandHoldingUsd } from "react-icons/fa";
 import { BsFillAwardFill } from "react-icons/bs";
 import { IoMenuSharp } from "react-icons/io5";
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowRightLong, FaMagnifyingGlassDollar } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import "../styles/Home.css";
 import gsap from 'gsap';
@@ -319,7 +321,66 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
   <img src={sec5} alt="" className='xl:h-[800px] h-[500px] md:h-[500px] sec4Img object-cover'/>
   </div>
 </main></section>
-<section className=' h-[500px] w-full'></section>
+
+
+{/* 5th section starts */}
+<section className=' w-full flex flex-col items-center gap-44 bg-primary rounded-t-2xl justify-center pt-44'>
+<main className='md:w-[90%] w-[95%] widthHome flex xl:flex-row flex-col text-white  justify-center items-center  gap-20' >
+ <div className='w-full flex justify-between'>
+ <div className='flex flex-col gap-5 '>
+<h2 className=' text-8xl font-extrabold'>  Buy crypto, <br />
+sell crypto.</h2>
+  <p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Suspendisse <br /> varius enim in eros elementum.
+  </p>
+ </div><div className='flex flex-col gap-10'>
+  <div className='flex gap-5 items-center'>
+    
+  <span className='text-white text-4xl'>
+    <FaCloudMeatball />
+  </span>
+  <h2 className='text-5xl font-extrabold'>155+ tokens</h2>
+  </div>
+  <div className='flex gap-5 items-center'>
+    
+  <span className='text-white text-4xl'>
+    <FaMagnifyingGlassDollar className='0'  />
+  </span>
+  <h2 className='text-5xl font-extrabold'>Analyze trends</h2>
+  </div>
+  <div className='flex gap-5 items-center'>
+    
+  <span className='text-white text-4xl'>
+    <FaCommentDollar  />
+  </span>
+  <h2 className='text-5xl font-extrabold'>Manage accounts</h2>
+  </div>
+  
+<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Learn More</button>
+  <div>
+
+  </div>
+ </div>
+ </div>
+ </main>
+ <img src={coins} alt="" />
+ <main className='md:w-[100%] w-[95%] widthHome flex xl:flex-row flex-col text-white  justify-center items-center  gap-20'>
+<img src={boyCard} alt="" className='w-[50%]'/>
+<div className='xl:w-[50%]'>
+<div className='w-[85%]'>
+<h2 className='text-8xl font-bold'>Try our credit card for a free 30+ days</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> varius enim in eros elementum.</p>
+<div className='flex justify-between'>
+  <div>
+    <h3 className=''>23+</h3>
+  </div>
+
+</div>
+</div>
+</div>
+ </main>
+ </section>
+ {/* 5th section ends here .... */}
     </div>
   )
 }
