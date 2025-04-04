@@ -10,10 +10,10 @@ import coins from "../assets/coins.webp";
 import boyCard from "../assets/boyCard.webp";
 import sec5 from "../assets/Image.png";
 import Xcard from "../assets/Xcard.png";
-import { FaCloudMeatball, FaCommentDollar, FaHandHoldingUsd } from "react-icons/fa";
+import { FaCloudMeatball, FaCommentDollar, FaCross, FaHandHoldingUsd } from "react-icons/fa";
 import { BsFillAwardFill } from "react-icons/bs";
 import { IoMenuSharp } from "react-icons/io5";
-import { FaArrowRightLong, FaMagnifyingGlassDollar } from "react-icons/fa6";
+import { FaArrowRightLong, FaCrosshairs, FaMagnifyingGlassDollar } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import "../styles/Home.css";
 import gsap from 'gsap';
@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
 
 
-
+const [click,setClick]=useState(false);
   const [isHovered , setIsHovered]=useState(false);
 const trueHover=()=>{
  setIsHovered(true);
@@ -216,7 +216,9 @@ useEffect(() => {
 
 
 
-
+const mobileMenu=()=>{
+setClick(!click); 
+}
 
   return (
     <div className='' style={{overflowX:"hidden"}} >
@@ -233,10 +235,16 @@ useEffect(() => {
   </ul>
   <div className='navButton'>
     
-  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
-  <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl'><IoMenuSharp/></button>
+  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
+  <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl' onClick={mobileMenu}><IoMenuSharp/></button>
   </div>
 </nav>
+{click && (<div className='absolute w-[100%]'><div style={{zIndex:"100000"}} className="w-[90%] h-[50vh]  rounded-b-xl  flow bg-white relative top-0">
+             <div className="flex flex-col gap-2 w-[100%] h-full p-5">
+              <Link to='/'><h2 className='text-primary font-bold text-2xl w-full'>Home</h2> <span></span></Link>
+              <Link to='/cards'><h2 className='text-primary font-bold text-2xl w-full'>Cards</h2></Link>
+             </div>
+            </div></div>)}
 
 <main className='flex flex-col md:flex-row'>
   <div className='md:w-[50%] mt-20 hero1'>
