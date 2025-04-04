@@ -87,6 +87,8 @@ scrub:2,
       trigger:".sec5Last",
       scroller:"body",
       start:"top 100%",
+      end:"top 50%",
+      scrub:2
           }
   })
 
@@ -217,7 +219,7 @@ useEffect(() => {
 
 
   return (
-    <div className='' >
+    <div className='' style={{overflowX:"hidden"}} >
      <section className='flex justify-center bannerHeight h-[1189px] md:h-screen w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
 <main className='md:w-[90%] w-[95%] widthHome text-white'>
 <nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
@@ -376,11 +378,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
 
 
 {/* 5th section starts */}
-<section className=' w-full flex flex-col items-center gap-44 bg-primary rounded-t-2xl justify-center pt-44 sec5' >
+<section className=' w-full flex flex-col items-center pb-20 lg:gap-44 gap-30 bg-primary rounded-t-2xl justify-center pt-44 sec5' >
 <main className='md:w-[90%] w-[95%] widthHome flex xl:flex-row flex-col text-white  justify-center items-center  gap-20' >
- <div className='w-full flex justify-between '>
+ <div className='w-full xl:flex-row xl:justify-between flex flex-col justify-center gap-10 xl:gap-0 '>
  <div className='flex flex-col gap-5 sec5a'>
-<h2 className=' text-8xl font-extrabold'>  Buy crypto, <br />
+<h2 className='text-7xl md:text-8xl font-extrabold'>  Buy crypto, <br />
 sell crypto.</h2>
   <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Suspendisse <br /> varius enim in eros elementum.
@@ -417,14 +419,14 @@ sell crypto.</h2>
  </main>
  <img src={coins} alt="" className='sec5c scale-[1]'/>
  <main className='md:w-[100%] w-[95%] sec5Last  flex xl:flex-row flex-col text-white  justify-center items-center  gap-20'>
-<div className='w-[50%] flex justify-start items-start'>
+<div className='xl:w-[50%] flex justify-start items-start relative -left-10'>
 <img src={boyCard} alt="" className='sec5d'/>
 </div>
 <div className='xl:w-[50%]'>
 <div className='w-[85%] flex flex-col gap-10'>
 <h2 className='text-7xl font-extrabold sec5d1'>Try our credit card for a free 30+ days</h2>
 <p className='sec5d2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> varius enim in eros elementum.</p>
-<div className='flex justify-between'>
+<div className='md:flex-row gap-10 md:gap-0 md:justify-between flex flex-col justify-center'>
   <div>
     <h3 className='text-secondary text-7xl font-extrabold sec5et1'>23+</h3>
     <p className='font-semibold text-xl sec5eb1'>Rewards</p>
