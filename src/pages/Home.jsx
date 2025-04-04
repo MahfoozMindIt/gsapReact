@@ -235,7 +235,7 @@ setClick(!click);
   </ul>
   <div className='navButton'>
     
-  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
+  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
   <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl' onClick={mobileMenu}><IoMenuSharp/></button>
   </div>
 </nav>
@@ -250,12 +250,12 @@ setClick(!click);
   <div className='md:w-[50%] mt-20 hero1'>
     <h1 className='xl:text-[80px] text-6xl font-extrabold  leading-20 xl:leading-24'>
     Start your <br />
-    Finance <span className='px-3 py-1 rounded-full border-[1px] border-white'>Journey</span>
+    Crypto Card <span className='px-3 py-1 rounded-full border-[1px] border-white'>Journey</span>
     </h1>
     <p className='py-5 xl:w-[89%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
   
     <div className='flex xl:flex-row flex-col  xl:items-center gap-5'>
-  <button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white'>Get Started</button>
+  <button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white'>Sign Up</button>
   <button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Contact Us</button>
 
   </div>
