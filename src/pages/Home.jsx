@@ -386,7 +386,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
 
 
 {/* 5th section starts */}
-<section className=' w-full flex flex-col items-center pb-20 lg:gap-44 gap-30 bg-primary rounded-t-2xl justify-center pt-44 sec5' >
+<section className=' w-full flex flex-col items-center pb-20 xl:pb-0 lg:gap-44 gap-30 bg-primary rounded-t-2xl justify-center pt-44 sec5' >
 <main className='md:w-[90%] w-[95%] widthHome flex xl:flex-row flex-col text-white  justify-center items-center  gap-20' >
  <div className='w-full xl:flex-row xl:justify-between flex flex-col justify-center gap-10 xl:gap-0 '>
  <div className='flex flex-col gap-5 sec5a'>
