@@ -8,6 +8,7 @@ import s1 from "../assets/cardSec3-1.webp";
 import s2 from "../assets/cardSec3-2.webp";
 import s3 from "../assets/cardSec3-3.webp";
 import s4 from "../assets/cardSec3-4.webp";
+import Xcard from "../assets/Xcard.png";
 import a1 from "../assets/sec4Cards1.webp";
 import a2 from "../assets/sec4Card2.webp";
 import a3 from "../assets/sec4Card3.webp";
@@ -21,6 +22,7 @@ import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaPlus } from 'react-icons/fa';
 import { RiArrowDropDownLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
 const Cards = () => {
@@ -179,12 +181,14 @@ useEffect(() => {
      <section className='flex justify-center bannerHeight h-[1189px] md:h-screen w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
 <main className='md:w-[90%] w-[95%] widthCards text-white'>
 <nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
+
+<Link to='/cards' className='logo '><img src={Xcard} alt="" className='w-36'/></Link>
   <ul className=' gap-10 xl:flex hidden items-center'>
-    <li className='l1'>Home</li>
-    <li className='l2'>Services</li>
+   <Link to='/' className='cursor-pointer'> <li className='l1'>Home</li></Link>
+    <Link to='/cards'>
+    <li className='l2'>Cards</li></Link>
     <li className='l3'>Contact</li>
   </ul>
-  <h3 className='logo '>LoGo</h3>
   <div className='navButton'>
     
   <button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>

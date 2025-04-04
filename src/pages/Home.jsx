@@ -9,6 +9,7 @@ import sec32 from "../assets/sec32.webp";
 import coins from "../assets/coins.webp";
 import boyCard from "../assets/boyCard.webp";
 import sec5 from "../assets/Image.png";
+import Xcard from "../assets/Xcard.png";
 import { FaCloudMeatball, FaCommentDollar, FaHandHoldingUsd } from "react-icons/fa";
 import { BsFillAwardFill } from "react-icons/bs";
 import { IoMenuSharp } from "react-icons/io5";
@@ -62,6 +63,30 @@ scrub:2,
       start:"top 50%",
       end:"bottom -10%",
       scrub:2,
+          }
+  })
+  const tl5=gsap.timeline({
+    scrollTrigger:{
+      trigger:".sec5",
+      scroller:"body",
+      start:"top 100%",
+          }
+  })
+  
+  const tl6=gsap.timeline({
+    scrollTrigger:{
+      trigger:".sec5",
+      scroller:"body",
+      start:"top 70%",
+      end:"top -50%",
+      scrub:2,
+          }
+  })
+  const tl7=gsap.timeline({
+    scrollTrigger:{
+      trigger:".sec5Last",
+      scroller:"body",
+      start:"top 100%",
           }
   })
 
@@ -129,7 +154,33 @@ scrub:2,
     delay:3,
     duration:2,
     stagger:0.2
-  })
+  }),  tl5.from('.sec5a,.sec5bl1,.sec5bl2,.sec5bl3',{
+    x:-40,
+    opacity:0,
+    delay:1,
+    duration:1,
+  },"new1"), tl5.from('.sec5br1,.sec5br2,.sec5br3',{
+    x:40,
+    opacity:0,
+    delay:1,
+    duration:1,
+  },"new1"),tl6.from('.sec5c',{
+    scale:0.1,
+    opacity:0,
+    delay:1,
+    duration:1,
+  },"new1")
+  ,tl7.from('.sec5d',{
+    x:-40,
+    opacity:0,
+    delay:1,
+    duration:1,
+  },"newAnother"),  tl7.from('.sec5d1,.sec5d2,.sec5et1,.sec5eb1,.sec5et2,.sec5eb2,.sec5et3,.sec5eb3',{
+    x:40,
+    opacity:0,
+    delay:1,
+    duration:1,
+  },"newAnother")
 });
 
 
@@ -170,13 +221,14 @@ useEffect(() => {
      <section className='flex justify-center bannerHeight h-[1189px] md:h-screen w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
 <main className='md:w-[90%] w-[95%] widthHome text-white'>
 <nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
+
+<Link to='/cards' className='logo '><img src={Xcard} alt="" className='w-36'/></Link>
   <ul className=' gap-10 xl:flex hidden items-center'>
-    <li className='l1'>Home</li>
+   <Link to='/' className='cursor-pointer'> <li className='l1'>Home</li></Link>
     <Link to='/cards'>
     <li className='l2'>Cards</li></Link>
     <li className='l3'>Contact</li>
   </ul>
-  <Link to='/cards' className='logo '>LoGo</Link>
   <div className='navButton'>
     
   <button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
@@ -324,10 +376,10 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
 
 
 {/* 5th section starts */}
-<section className=' w-full flex flex-col items-center gap-44 bg-primary rounded-t-2xl justify-center pt-44'>
+<section className=' w-full flex flex-col items-center gap-44 bg-primary rounded-t-2xl justify-center pt-44 sec5' >
 <main className='md:w-[90%] w-[95%] widthHome flex xl:flex-row flex-col text-white  justify-center items-center  gap-20' >
- <div className='w-full flex justify-between'>
- <div className='flex flex-col gap-5 '>
+ <div className='w-full flex justify-between '>
+ <div className='flex flex-col gap-5 sec5a'>
 <h2 className=' text-8xl font-extrabold'>  Buy crypto, <br />
 sell crypto.</h2>
   <p>
@@ -336,54 +388,54 @@ sell crypto.</h2>
  </div><div className='flex flex-col gap-10'>
   <div className='flex gap-5 items-center'>
     
-  <span className='text-white text-4xl'>
+  <span className='text-white text-4xl sec5bl1'>
     <FaCloudMeatball />
   </span>
-  <h2 className='text-5xl font-extrabold'>155+ tokens</h2>
+  <h2 className='text-5xl font-extrabold sec5br1'>155+ tokens</h2>
   </div>
   <div className='flex gap-5 items-center'>
     
-  <span className='text-white text-4xl'>
+  <span className='text-white text-4xl sec5bl2'>
     <FaMagnifyingGlassDollar className='0'  />
   </span>
-  <h2 className='text-5xl font-extrabold'>Analyze trends</h2>
+  <h2 className='text-5xl font-extrabold sec5br2'>Analyze trends</h2>
   </div>
   <div className='flex gap-5 items-center'>
     
-  <span className='text-white text-4xl'>
+  <span className='text-white text-4xl sec5bl3'>
     <FaCommentDollar  />
   </span>
-  <h2 className='text-5xl font-extrabold'>Manage accounts</h2>
+  <h2 className='text-5xl font-extrabold sec5br3'>Manage accounts</h2>
   </div>
   
-<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Learn More</button>
+<button className='px-7 py-3 w-fit text-hover sec5Btn hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Learn More</button>
   <div>
 
   </div>
  </div>
  </div>
  </main>
- <img src={coins} alt="" />
- <main className='md:w-[100%] w-[95%]  flex xl:flex-row flex-col text-white  justify-center items-center  gap-20'>
+ <img src={coins} alt="" className='sec5c scale-[1]'/>
+ <main className='md:w-[100%] w-[95%] sec5Last  flex xl:flex-row flex-col text-white  justify-center items-center  gap-20'>
 <div className='w-[50%] flex justify-start items-start'>
-<img src={boyCard} alt="" className=''/>
+<img src={boyCard} alt="" className='sec5d'/>
 </div>
 <div className='xl:w-[50%]'>
 <div className='w-[85%] flex flex-col gap-10'>
-<h2 className='text-7xl font-extrabold'>Try our credit card for a free 30+ days</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> varius enim in eros elementum.</p>
+<h2 className='text-7xl font-extrabold sec5d1'>Try our credit card for a free 30+ days</h2>
+<p className='sec5d2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> varius enim in eros elementum.</p>
 <div className='flex justify-between'>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold'>23+</h3>
-    <p className='font-semibold text-xl'>Rewards</p>
+    <h3 className='text-secondary text-7xl font-extrabold sec5et1'>23+</h3>
+    <p className='font-semibold text-xl sec5eb1'>Rewards</p>
   </div>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold'>2%</h3>
-    <p className='font-semibold text-xl'>Interest Rate</p>
+    <h3 className='text-secondary text-7xl font-extrabold sec5et2'>2%</h3>
+    <p className='font-semibold text-xl sec5eb2'>Interest Rate</p>
   </div>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold'>1mill</h3>
-    <p className='font-semibold text-xl'>Users</p>
+    <h3 className='text-secondary text-7xl font-extrabold sec5et3'>1mill</h3>
+    <p className='font-semibold text-xl sec5eb3'>Users</p>
   </div>
 
 </div>
