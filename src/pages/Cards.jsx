@@ -8,12 +8,13 @@ import s1 from "../assets/cardSec3-1.webp";
 import s2 from "../assets/cardSec3-2.webp";
 import s3 from "../assets/cardSec3-3.webp";
 import s4 from "../assets/cardSec3-4.webp";
-import Xcard from "../assets/Xcard.png";
+import Xcard from "../assets/xcardLogo.png";
 import a1 from "../assets/sec4Cards1.webp";
 import a2 from "../assets/sec4Card2.webp";
 import a3 from "../assets/sec4Card3.webp";
 import a4 from "../assets/sec4Card4.webp";
 import sec5 from "../assets/Image.png";
+import xcard2sec from "../assets/xcard2sec.png";
 import { IoMenuSharp } from "react-icons/io5";
 import { TiTick } from "react-icons/ti";
 import "../styles/Cards.css";
@@ -71,6 +72,15 @@ scroller:"body",
 start:"top 100%",
 end:"top 0",
 scrub:2,
+    }
+  })
+  
+  const tl4=gsap.timeline({
+    scrollTrigger:{
+trigger:".sectionAdded2",
+scroller:"section",
+start:"top 40%",
+end:"bottom 0",
     }
   })
 
@@ -140,7 +150,18 @@ scrub:2,
     delay:1,
     duration:1,
     stagger:0.2
-  })
+  }),tl4.from('.l1',{
+    x:-40,
+    opacity:0,
+    delay:1,
+    duration:1,
+    stagger:0.2
+  },"anim1"),tl4.from('#l4',{
+    x:40,
+    opacity:0,
+    delay:1,
+    duration:1,
+  },"anim1")
 });
 
 
@@ -229,7 +250,32 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
      </section>
    
 
-{/* 2nd section starts */}
+   
+<section className=' w-full flex sectionAdded2 justify-center pt-44 '>
+<main className='md:w-[90%] w-[95%] widthCards flex flex-col lg:flex-row items-center justify-center gap-20' >
+
+<div className='flex flex-col gap-7 xl:w-[47%] l1 lg:-[50%]'>
+  
+<h2 className='font-extrabold xl:text-7xl md:text-5xl  text-4xl text-center lg:text-start'>
+An international dollar <br className='xl:hidden'/> card that works
+</h2>
+<p className='text-center lg:text-start l2'>
+Spend freely at home and abroad with a globally accepted <br className='md:block lg:hidden xl:block hidden'/> virtual debit card that never declines.
+
+</p>
+<div className=' w-full flex l3 justify-center lg:justify-start'>
+
+<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Started</button>
+
+</div>
+</div>
+<div className='lg:w-[50%] flex justify-center  items-center'>
+  <img src={xcard2sec} alt="" className='w-96 l4'/>
+</div>
+
+</main></section>
+
+{/* 3rd section starts */}
 <section className=' w-full flex section3 justify-center pt-44 section2Cards'>
 <main className='md:w-[90%] w-[95%] widthCards flex flex-col items-center justify-center gap-20' >
 
@@ -421,32 +467,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 </main></section>
 
 
-{/* 4rth section starts */}
-<section className=' w-full flex justify-center pt-44 '>
-<main className='md:w-[90%] w-[95%] widthCards flex xl:flex-row flex-col  justify-center items-center  gap-20 section3' >
-  <div className='flex flex-col gap-10 xl:w-[49%]'>
-    <h2 className='text-hover font-extrabold sec4h text-center xl:text-start text-4xl md:text-7xl'>An app that does it all in one place
-    </h2>
-    <p className='text-hover text-md sec4p text-center xl:text-start xl:w-[90%] font-medium'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.
-    </p>
-  <section className='flex flex-col gap-5 w-full items-center xl:items-start'>
-  <div className='flex items-center sec4p1 gap-3'>
-      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className='flex items-center sec4p2 gap-3'>
-      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-    <div className='flex items-center sec4p3 gap-3'>
-      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-  </section>
-  </div>
-  <div className='md:w-[55%]'>
-    
-  <img src={sec5} alt="" className='xl:h-[800px] h-[500px] md:h-[500px] sec4Img object-cover'/>
-  </div>
-</main></section>
+
 <section className=' h-[500px] w-full'></section>
     </div>
   )

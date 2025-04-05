@@ -9,7 +9,7 @@ import sec32 from "../assets/sec32.webp";
 import coins from "../assets/coins.webp";
 import boyCard from "../assets/boyCard.webp";
 import sec5 from "../assets/Image.png";
-import Xcard from "../assets/Xcard.png";
+import Xcard from "../assets/xcardLogo.png";
 import { FaCloudMeatball, FaCommentDollar, FaCross, FaHandHoldingUsd } from "react-icons/fa";
 import { BsFillAwardFill } from "react-icons/bs";
 import { IoMenuSharp } from "react-icons/io5";
