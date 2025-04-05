@@ -10,15 +10,15 @@ import s3 from "../assets/cardSec3-3.webp";
 import s4 from "../assets/cardSec3-4.webp";
 import Xcard from "../assets/xcardLogo.png";
 import bullet from "../assets/bulletXcard.svg";
+import come1 from "../assets/come1.svg";
+import get1 from "../assets/get1.avif";
 import hand from "../assets/xcard4sec.svg";
 import a1 from "../assets/sec4Cards1.webp";
 import a2 from "../assets/sec4Card2.webp";
 import a3 from "../assets/sec4Card3.webp";
 import a4 from "../assets/sec4Card4.webp";
-import sec5 from "../assets/Image.png";
 import xcard2sec from "../assets/xcard2sec.png";
 import { IoMenuSharp } from "react-icons/io5";
-import { TiTick } from "react-icons/ti";
 import "../styles/Cards.css";
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
@@ -26,6 +26,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaPlus } from 'react-icons/fa';
 import { RiArrowDropDownLine } from 'react-icons/ri';
 import { Link } from 'react-router-dom';
+import { PiCardsThreeBold } from 'react-icons/pi';
+import { MdOutlineNotificationsActive } from 'react-icons/md';
+import {  SiGoogleauthenticator } from 'react-icons/si';
 gsap.registerPlugin(ScrollTrigger);
 
 const Cards = () => {
@@ -35,6 +38,10 @@ const Cards = () => {
   const [isHovered , setIsHovered]=useState(false);
   const [isHovered2 , setIsHovered2]=useState(false);
   const [isHovered3 , setIsHovered3]=useState(false);
+  const [come , setCome]=useState(true);
+  const [get , setGet]=useState(false);
+  const [step, setStep] = useState(0); 
+  const [came , setCame]=useState(false);
   const [openIndex , setOpenIndex]=useState(null);
 
 
@@ -43,16 +50,31 @@ const Cards = () => {
   };
 
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setStep((prevStep) => (prevStep + 1) % 3);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    if (step === 0) {
+      setCome(true);
+      setGet(false);
+      setCame(false);
+    } else if (step === 1) {
+      setCome(false);
+      setGet(true);
+      setCame(false);
+    } else if (step === 2) {
+      setCome(false);
+      setGet(false);
+      setCame(true);
+    }
+  }, [step]);
 
 
-  const sectionFour = {
-    trigger: "#sec4MainDIV",
-    scroller: "body",
-    start: "top 10%",
-    end: "top -250%",
-    scrub: 2,
-    pin: true,
-};
 
 //  Gsap Starts here
 useGSAP(() => {
@@ -452,6 +474,49 @@ Never miss a payment with <br className='lg:block hidden'/> the Xcard's dollar M
 </div>
 </main></section>
 {/* another section ends */}
+
+
+{/* spend safer online section starts */}
+
+<section className=' w-full flex  border-b-[1px] border-b-[rgba(0,0,0,0.1)] justify-center pt-44 pb-32 '>
+<main className='md:w-[90%] w-[95%] widthCards flex flex-col lg:flex-row items-center justify-center gap-20' >
+
+<div className='flex flex-col gap-7 xl:w-[47%]  lg:-[50%]'>
+  
+<h2 className='font-extrabold xl:text-6xl md:text-5xl pb-20  text-4xl text-center lg:text-start'>
+Spend safer online  <br className=''/> with our card security measures
+</h2>
+<div className={`flex  gap-10 transition-all duration-300  pb-10 ${come && ("border-b-[1px]   border-b-primary bg-[whitesmoke] py-5")}  px-5`}>
+  <span className='text-2xl'><PiCardsThreeBold/></span>
+<div>
+<p className='text-xl font-extrabold'>Freeze card</p>
+{come && <h3 className='pt-5 text-[rgba(0,0,0,0.7)]  transition-all duration-300'>Freeze your card to prevent it from unauthorized use, and unfreeze it when the coast is clear.</h3>}
+</div>
+</div>
+<div className={`flex  gap-10 transition-all duration-300  pb-10 ${get && ("border-b-[1px]   border-b-primary bg-[whitesmoke] py-5")} px-5`}>
+  <span className='text-2xl'><MdOutlineNotificationsActive/></span>
+<div>
+<p className='text-xl font-extrabold'>Instant notification</p>
+{get && <h3 className='pt-5 text-[rgba(0,0,0,0.7)]  transition-all duration-300'>Keep track of every completed card transaction you make with Grey.</h3>}
+</div>
+</div>
+<div className={`flex  gap-10 transition-all duration-300  pb-10 ${came && ("border-b-[1px]   border-b-primary bg-[whitesmoke] py-5")} px-5`}>
+  <span className='text-2xl'><SiGoogleauthenticator/></span>
+<div>
+<p className='text-xl font-extrabold'>Two-factor authentication</p>
+{came && <h3 className='pt-5 text-[rgba(0,0,0,0.7)]  transition-all duration-300'>Add an extra layer of security to prevent unauthorized access to your accounts.</h3>}
+</div>
+</div>
+</div>
+<div className='lg:w-[50%] flex justify-center  items-center'>
+  {come && <img src={come1} alt="" className=''/>}
+  {get && <img src={get1} alt="" className='w-[70%]'/>}
+  {came && <img src={a1} alt="" className='w-[70%]'/>}
+</div>
+
+</main></section>
+
+{/* spend safer online section ends */}
 
 <section className=' w-full flex section3 justify-center pt-44 section3Cards'>
 <main className='md:w-[90%] w-[95%] widthCards flex flex-col items-center justify-center gap-20' >
