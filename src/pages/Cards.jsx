@@ -9,6 +9,8 @@ import s2 from "../assets/cardSec3-2.webp";
 import s3 from "../assets/cardSec3-3.webp";
 import s4 from "../assets/cardSec3-4.webp";
 import Xcard from "../assets/xcardLogo.png";
+import bullet from "../assets/bulletXcard.svg";
+import hand from "../assets/xcard4sec.svg";
 import a1 from "../assets/sec4Cards1.webp";
 import a2 from "../assets/sec4Card2.webp";
 import a3 from "../assets/sec4Card3.webp";
@@ -82,6 +84,15 @@ scroller:"section",
 start:"top 40%",
 end:"bottom 0",
     }
+  })
+  const tl5=gsap.timeline({
+    scrollTrigger:{
+      trigger:".dollarCard",
+      scroller:"body",
+      start:"top 100%",
+      end:"top -10%",
+      scrub:2,
+          }
   })
 
   tl.from('.l1,.l2,.l3,.logo,.navButton', {
@@ -161,7 +172,35 @@ end:"bottom 0",
     opacity:0,
     delay:1,
     duration:1,
-  },"anim1")
+  },"anim1"),tl5.from('.whyChoose',{
+    y:-40,
+    opacity:0,
+    delay:1,
+    duration:1,
+    stagger:0.2
+  }),tl5.from('.n1',{
+    x:-40,
+    opacity:0,
+    delay:1,
+    duration:1,
+    stagger:0.2
+  },"newNew"),tl5.from('.n2',{
+    x:40,
+    opacity:0,
+    delay:1,
+    duration:1,
+    stagger:0.2
+  },"newNew"),tl5.from('.hand',{
+    scale:0.5,
+    opacity:0,
+    delay:1,
+    duration:1,
+  }),tl5.from('.n3',{
+    y:40,
+    opacity:0,
+    delay:1,
+    duration:1,
+  })
 });
 
 
@@ -251,7 +290,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
    
 
    
-<section className=' w-full flex sectionAdded2 justify-center pt-44 '>
+<section className=' w-full flex sectionAdded2 bg-[whitesmoke] justify-center pt-44 '>
 <main className='md:w-[90%] w-[95%] widthCards flex flex-col lg:flex-row items-center justify-center gap-20' >
 
 <div className='flex flex-col gap-7 xl:w-[47%] l1 lg:-[50%]'>
@@ -289,7 +328,8 @@ Spend freely at home and abroad with a globally accepted <br className='md:block
 <div className={`grid1 rounded-2xl text-white  relative`}>
 <main className='flex flex-col xl:flex-row p-5 sec3g1'>
 <div className='flex justify-between text-xl font-bold w-full'>
-    <h3>App Management</h3>
+    <h3>Zero
+    maintenance card</h3>
     <button onClick={()=>setIsHovered(!isHovered)} className='bg-primary w-fit z-[100000] p-2 rounded-full cursor-pointer'><FaPlus className={`z-[100000] transition-all duration-500 ${isHovered&&"rotate-45"}`}/></button>
 </div>
 </main>
@@ -297,9 +337,9 @@ Spend freely at home and abroad with a globally accepted <br className='md:block
 {isHovered && (<div className='bg-primary h-full w-full pt-16 px-5 z-[1] absolute rounded-2xl top-0'>
     
     <h3 className='text-white text-2xl font-bold'>
-    Lorem ipsum dolor sit amet, consect</h3><p className='pt-10 text-xl'>
-        
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+    A zero
+    maintenance card</h3><p className='pt-10 text-xl'>
+    Get debited only for your purchases. No maintenance and hidden fees.
     </p>
     </div>)}
 
@@ -307,7 +347,8 @@ Spend freely at home and abroad with a globally accepted <br className='md:block
 <div className={`grid2 rounded-2xl text-white  relative`}>
 <main className='flex flex-col xl:flex-row p-5 sec3g1'>
 <div className='flex justify-between text-xl font-bold w-full'>
-    <h3>App Management</h3>
+    <h3>Wiser spendings
+</h3>
     <button onClick={()=>setIsHovered2(!isHovered2)} className='bg-primary w-fit z-[100000] p-2 rounded-full cursor-pointer'><FaPlus className={`z-[100000] transition-all duration-500 ${isHovered2&&"rotate-45"}`}/></button>
 </div>
 </main>
@@ -315,16 +356,19 @@ Spend freely at home and abroad with a globally accepted <br className='md:block
 {isHovered2 && (<div className='bg-primary h-full w-full pt-16 px-5 z-[1] absolute rounded-2xl top-0'>
     
     <h3 className='text-white text-2xl font-bold'>
-    Lorem ipsum dolor sit amet, consect</h3><p className='pt-10 text-xl'>
+    Tools for wiser
+spending
+</h3><p className='pt-10 text-xl'>
         
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+Make better spending decisions with expense insights from your spending habits.
     </p>
     </div>)}
 
 </div><div className={`grid3 rounded-2xl text-white  relative`}>
 <main className='flex flex-col xl:flex-row p-5 sec3g1'>
 <div className='flex justify-between text-xl font-bold w-full'>
-    <h3>App Management</h3>
+    <h3>Pay on any
+    digital store</h3>
     <button onClick={()=>setIsHovered3(!isHovered3)} className='bg-primary w-fit z-[100000] p-2 rounded-full cursor-pointer'><FaPlus className={`z-[100000] transition-all duration-500 ${isHovered3&&"rotate-45"}`}/></button>
 </div>
 </main>
@@ -332,9 +376,9 @@ Spend freely at home and abroad with a globally accepted <br className='md:block
 {isHovered3 && (<div className='bg-primary h-full w-full pt-16 px-5 z-[1] absolute rounded-2xl top-0'>
     
     <h3 className='text-white text-2xl font-bold'>
-    Lorem ipsum dolor sit amet, consect</h3><p className='pt-10 text-xl'>
-        
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.
+   You can now pay on any
+digital store</h3><p className='pt-10 text-xl'>
+Pay for your bills, flight tickets, or subscriptions, and shop in international stores online.
     </p>
     </div>)}
 
@@ -343,6 +387,71 @@ Spend freely at home and abroad with a globally accepted <br className='md:block
 
 </main></section>
 
+
+{/* another section starts */}
+
+<section className=' w-full flex bg-[whitesmoke] dollarCard text-hover rounded-t-2xl mt-44 justify-center py-44 '>
+<main className='md:w-[90%] w-[95%] widthCards  flex flex-col items-center justify-center gap-20' >
+<h2 className='md:text-6xl text-4xl font-extrabold whyChoose  text-center'>
+Why choose <br className='hidden md:block'/>
+our virtual dollar <br className='hidden md:block'/> Mastercard?
+</h2>
+<section className='flex flex-col gap-5'>
+  
+<div className='w-full n1'>
+<div className='flex flex-wrap justify-center gap-5'>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>Top up with your local currency</p>
+</div>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>Card withdrawals</p>
+</div>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>No declined transaction fees</p>
+</div>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>Zero maintenance charges</p>
+</div>
+</div>
+</div>
+<div className='w-full n2'>
+<div className='flex flex-wrap justify-center gap-5'>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>Card statements</p>
+</div>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>Instant transaction notifications</p>
+</div>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>Card restrictions when you want</p>
+</div>
+<div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
+  <img src={bullet} alt="" />
+  <p className='text-xl font-semibold'>Anti-fraud protection</p>
+</div>
+</div>
+</div>
+</section>
+<div className='w-full flex justify-center'>
+  
+<img src={hand} alt="" className='hand'/>
+</div>
+<div className='w-full flex justify-center flex-col gap-7 n3 items-center'>
+<h2 className='md:text-6xl text-4xl font-extrabold  text-center'>
+Never miss a payment with <br className='lg:block hidden'/> the Xcard's dollar Mastercard
+</h2>
+<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Yours Now</button>
+
+</div>
+</main></section>
+{/* another section ends */}
 
 <section className=' w-full flex section3 justify-center pt-44 section3Cards'>
 <main className='md:w-[90%] w-[95%] widthCards flex flex-col items-center justify-center gap-20' >
