@@ -572,7 +572,7 @@ Spend safer online  <br className=''/> with our card security measures
     Contactless payments</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
-<img src={a1} alt="" className='md:w-[50%] rounded-2xl'/>
+<img src={a1} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
 </div>
 <div id='card_2' className='bg-primary card2 flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
@@ -580,7 +580,7 @@ Spend safer online  <br className=''/> with our card security measures
     Flexible payments</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
-<img src={a2} alt="" className='md:w-[50%] rounded-2xl'/>
+<img src={a2} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
 </div>
 <div id='card_3' className='bg-primary card3  flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
@@ -588,7 +588,7 @@ Spend safer online  <br className=''/> with our card security measures
     Introductory APR</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
-<img src={a3} alt="" className='md:w-[50%] rounded-2xl'/>
+<img src={a3} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
 </div>
 <div id='card_4' className='bg-primary card4  flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
@@ -596,7 +596,7 @@ Spend safer online  <br className=''/> with our card security measures
     ‍Real-time fraud monitoring</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
-<img src={a4} alt="" className='md:w-[50%] rounded-2xl'/>
+<img src={a4} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
 </div>
 
 
