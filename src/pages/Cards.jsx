@@ -654,8 +654,6 @@ Spend safer online  <br className=''/> with our card security measures
 </main></section>
 
 
-
-<section className=' h-[500px] w-full'></section>
     </div>
   )
 }
