@@ -75,7 +75,6 @@ const Cards = () => {
   }, [step]);
 
 
-
 //  Gsap Starts here
 useGSAP(() => {
   const tl = gsap.timeline();

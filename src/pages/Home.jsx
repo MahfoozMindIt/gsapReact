@@ -7,6 +7,11 @@ import paraPig from "../assets/paraPig.webp";
 import sec31 from "../assets/home3-1.png";
 import sec32 from "../assets/sec32.webp";
 import coins from "../assets/coins.webp";
+import r1 from "../assets/homesec6-1.webp";
+import r2 from "../assets/sec6-2.webp";
+import r3 from "../assets/homeSec6-3.webp";
+import r4 from "../assets/homesec6-4.webp";
+import r5 from "../assets/homesec6-5.png";
 import boyCard from "../assets/boyCard.webp";
 import sec5 from "../assets/Image.png";
 import Xcard from "../assets/xcardLogo.png";
@@ -454,6 +459,142 @@ sell crypto.</h2>
  </main>
  </section>
  {/* 5th section ends here .... */}
+ 
+{/* 6th section starts */}
+<section className=' w-full flex section3 justify-center pt-44'>
+<main className='md:w-[90%] w-[95%] widthHome flex flex-col items-center justify-center gap-20' >
+
+<div className='flex flex-col items-center justify-center gap-5'>
+<h2 className='text-center text-4xl md:text-7xl sec3h font-extrabold text-hover'>
+Why Choose Xcard
+</h2>
+<p className='text-center text-hover sec3p w-[80%]'>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.
+</p>
+</div>
+
+<div className=' grid-cols-1 xl:grid hidden md:grid-cols-2 mt-32  w-full  gap-4'>
+<section className='flex flex-col gap-4'>
+<div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)] h-[500px] rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row '>
+<div className=' flex flex-col gap-5 w-[45%]'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>Free app to use everywhere</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r1} alt="" className='w-[300px] relative -top-25'/>
+</main>
+</div>
+
+<div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)] h-[500px] rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row '>
+<div className=' flex flex-col gap-5 w-[45%]'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>Real time notifications</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r3} alt="" className='w-[300px]'/>
+</main>
+</div>
+</section>
+<section className='flex flex-col gap-4'>
+  <div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)] h-[600px] rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row '>
+<div className=' flex flex-col justify-center gap-5 w-[45%]'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>AI message assistant support</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r2} alt="" className='w-[300px] relative -top-23 scale-[1.1]'/>
+</main>
+</div>
+<div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)] h-[400px] rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row '>
+<div className=' flex flex-col justify-center gap-5 w-[45%]'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>Keep track of your money easily</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r4} alt="" className='w-[200px]'/>
+</main>
+</div></section>
+<div className='bg-[whitesmoke] col-span-2 border-[rgba(0,0,0,0.1)]  rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row '>
+<div className=' flex flex-col justify-center gap-5 w-[45%]'>
+  <h2 className='xl:text-5xl  font-extrabold text-2xl text-hover'>Get the app with <br/> 30k 5 star reviws</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Suspendisse varius enim <br /> in eros elementum.</p>
+    
+  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white w-fit  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Learn More</button>
+ 
+</div>
+<img src={r5} alt="" className='w-[350px] bg-primary'/>
+</main>
+</div>
+</div>
+
+
+
+<div className=' grid-cols-1 xl:hidden grid md:grid-cols-2    w-full  gap-4'>
+
+<div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)]  rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row gap-14'>
+<div className=' flex flex-col gap-5'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>Free app to use everywhere</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r1} alt="" className='w-[300px]'/>
+</main>
+</div>
+
+<div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)]  rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row gap-14'>
+<div className=' flex flex-col justify-center gap-5'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>AI message assistant support</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r2} alt="" className='w-[200px]  '/>
+</main>
+</div>
+<div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)]  rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row gap-14'>
+<div className=' flex flex-col gap-5'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>Real time notifications</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r3} alt="" className='w-[300px]'/>
+</main>
+</div>
+
+
+<div className='bg-[whitesmoke] border-[rgba(0,0,0,0.1)]  rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between xl:flex-row gap-14'>
+<div className=' flex flex-col justify-center gap-5'>
+  <h2 className='xl:text-3xl font-extrabold text-2xl text-hover'>Keep track of your money easily</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+ 
+</div>
+<img src={r4} alt="" className='w-[200px]'/>
+</main>
+</div>
+<div className='bg-[whitesmoke] md:col-span-2 border-[rgba(0,0,0,0.1)]  rounded-xl border-[1px] p-5'>
+<main className='flex flex-col   md:justify-between md:flex-row gap-14'>
+<div className=' flex flex-col justify-center gap-5 md:w-[45%]'>
+  <h2 className='lg:text-4xl  font-extrabold text-2xl text-hover'>Get the app with <br/> 30k 5 star reviews</h2>
+  <p className='opacity-[0.6] font-light'>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Suspendisse varius enim <br /> in eros elementum.</p>
+    
+  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white w-fit  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Learn More</button>
+ 
+</div>
+<img src={r5} alt="" className='w-[350px] bg-primary'/>
+</main>
+</div>
+</div>
+
+</main></section>
+{/* 6th section ends */}
     </div>
   )
 }
