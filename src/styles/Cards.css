@@ -41,3 +41,119 @@
     background-size: cover;
     height: 700px;
 }
+
+
+
+
+
+
+#cards {
+    padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+    /* Make place at bottom, as items will slide to that position*/
+    margin-bottom: var(--card-margin);
+    /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+    list-style: none;
+    display: grid;
+}
+
+#card_1 {
+    --index: 1;
+    margin-bottom: 50px;
+}
+
+#card_2 {
+    --index: 2;
+    margin-bottom: 50px;
+}
+#card_3 {
+    --index: 3;
+    margin-bottom: 50px;
+}
+#card_4 {
+    --index: 4;
+    margin-bottom: 50px;
+}
+
+.card1 {
+    position: sticky;
+    top: 3%;
+    scale: 0.7;
+    padding-top: calc(var(--index) * var(--card-top-offset));
+    border-radius: 20px;
+
+}
+.card2 {
+    position: sticky;
+    top: 3%;
+    scale: 0.8;
+
+    padding-top: calc(var(--index) * var(--card-top-offset));
+    border-radius: 20px;
+
+}
+.card3 {
+    position: sticky;
+    top: 3%;
+    scale: 0.9;
+    padding-top: calc(var(--index) * var(--card-top-offset));
+    border-radius: 20px;
+
+}
+.card4 {
+    position: sticky;
+    top: 3%;
+    scale: 1;
+    padding-top: calc(var(--index) * var(--card-top-offset));
+    border-radius: 20px;
+
+}
+
+@supports (animation-timeline: works) {
+
+    @scroll-timeline cards-element-scrolls-in-body {
+        source: selector(body);
+        scroll-offsets:
+            /* Start when the start edge touches the top of the scrollport */
+            selector(#cards) start 1,
+            /* End when the start edge touches the start of the scrollport */
+            selector(#cards) start 0;
+        start: selector(#cards) start 1;
+        /* Start when the start edge touches the top of the scrollport */
+        end: selector(#cards) start 0;
+        /* End when the start edge touches the start of the scrollport */
+        time-range: 4s;
+    }
+
+    .card1 {
+        --index0: calc(var(--index) - 1);
+        /* 0-based index */
+        --reverse-index: calc(var(--numcards) - var(--index0));
+        /* reverse index */
+        --reverse-index0: calc(var(--reverse-index) - 1);
+        /* 0-based reverse index */
+    }
+    .card2 {
+        --index0: calc(var(--index) - 1);
+        /* 0-based index */
+        --reverse-index: calc(var(--numcards) - var(--index0));
+        /* reverse index */
+        --reverse-index0: calc(var(--reverse-index) - 1);
+        /* 0-based reverse index */
+    }
+    .card3 {
+        --index0: calc(var(--index) - 1);
+        /* 0-based index */
+        --reverse-index: calc(var(--numcards) - var(--index0));
+        /* reverse index */
+        --reverse-index0: calc(var(--reverse-index) - 1);
+        /* 0-based reverse index */
+    }
+    .card4 {
+        --index0: calc(var(--index) - 1);
+        /* 0-based index */
+        --reverse-index: calc(var(--numcards) - var(--index0));
+        /* reverse index */
+        --reverse-index0: calc(var(--reverse-index) - 1);
+        /* 0-based reverse index */
+    }
+}

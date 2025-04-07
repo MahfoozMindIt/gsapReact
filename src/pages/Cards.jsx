@@ -116,6 +116,15 @@ end:"bottom 0",
       scrub:2,
           }
   })
+    const tl6=gsap.timeline({
+    scrollTrigger:{
+      trigger:"#cards",
+      scroller:"body",
+      start:"top 100%",
+      end:"top -10%",
+      scrub:2,
+          }
+  })
 
   tl.from('.l1,.l2,.l3,.logo,.navButton', {
     y: -30,
@@ -219,6 +228,11 @@ end:"bottom 0",
     duration:1,
   }),tl5.from('.n3',{
     y:40,
+    opacity:0,
+    delay:1,
+    duration:1,
+  }),tl6.from('#cards',{
+    scale:1.2,
     opacity:0,
     delay:1,
     duration:1,
@@ -551,35 +565,35 @@ Spend safer online  <br className=''/> with our card security measures
 
 </div>
 
-<div id='sec4MainDIV' className='grid  grid-cols-1 gap-10 mt-20'>
+<div id='cards' className='grid  grid-cols-1 gap-10 mt-20'>
 
-<div id='div1' className='bg-primary  flex flex-col gap-20 md:flex-row rounded-2xl p-20'>
+<div id='card_1' className='bg-primary  card1 flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5  py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
-    <h2 className='text-5xl lg:text-6xl font-extrabold pb-7'>
+    <h2 className='text-5xl lg:text-6xl font-extrabold pt-14 lg:pt-0 pb-7'>
     Contactless payments</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
 <img src={a1} alt="" className='md:w-[50%] rounded-2xl'/>
 </div>
-<div id='div2' className='bg-primary  flex flex-col gap-20 md:flex-row rounded-2xl p-20'>
+<div id='card_2' className='bg-primary card2 flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
-    <h2 className='text-5xl lg:text-6xl font-extrabold pb-7'>
+    <h2 className='text-5xl lg:text-6xl font-extrabold pt-14 lg:pt-0 pb-7'>
     Flexible payments</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
 <img src={a2} alt="" className='md:w-[50%] rounded-2xl'/>
 </div>
-<div id='div3' className='bg-primary  flex flex-col gap-20 md:flex-row rounded-2xl p-20'>
+<div id='card_3' className='bg-primary card3  flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
-    <h2 className='lg:text-6xl text-5xl font-extrabold pb-7'>
+    <h2 className='lg:text-6xl text-5xl font-extrabold pt-14 lg:pt-0 pb-7'>
     Introductory APR</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
 <img src={a3} alt="" className='md:w-[50%] rounded-2xl'/>
 </div>
-<div id='div4' className='bg-primary  flex flex-col gap-20 md:flex-row rounded-2xl p-20'>
+<div id='card_4' className='bg-primary card4  flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
-    <h2 className='lg:text-6xl text-5xl font-extrabold pb-7'>
+    <h2 className='lg:text-6xl text-5xl font-extrabold pt-14 lg:pt-0 pb-7'>
     ‍Real-time fraud monitoring</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
@@ -613,7 +627,7 @@ Spend safer online  <br className=''/> with our card security measures
       {[0, 1,2,3,4,5,6,7,8].map((index) => (
         <div
           key={index}
-          className="bg-primary gap-10 flex w-full rounded-full items-center p-5"
+          className="bg-primary gap-10 flex w-full md:rounded-full rounded-3xl items-center p-5"
         >
           <button
             onClick={() => toggleFaq(index)}
