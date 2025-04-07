@@ -222,7 +222,7 @@ setClick(!click);
 
   return (
     <div className='' style={{overflowX:"hidden"}} >
-     <section className='flex justify-center bannerHeight h-[1189px] md:h-screen w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
+     <section className='flex justify-center bannerHeight h-[1207px] md:h-auto lg:h-auto lg:pb-10 xl:pb-0  w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
 <main className='md:w-[90%] w-[95%] widthHome text-white'>
 <nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
 
@@ -246,8 +246,8 @@ setClick(!click);
              </div>
             </div></div>)}
 
-<main className='flex flex-col md:flex-row'>
-  <div className='md:w-[50%] mt-20 hero1'>
+<main className='flex flex-col lg:flex-row'>
+  <div className='lg:w-[50%] mt-20 hero1'>
     <h1 className='xl:text-[80px] text-6xl font-extrabold  leading-20 xl:leading-24'>
     Start your <br />
     Crypto Card <span className='px-3 py-1 rounded-full border-[1px] border-white'>Journey</span>

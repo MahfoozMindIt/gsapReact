@@ -274,7 +274,7 @@ useEffect(() => {
 
   return (
     <div className='' style={{overflowX:"hidden !important"}}>
-     <section className='flex justify-center bannerHeight h-[1189px] md:h-screen w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
+     <section className='flex justify-center bannerHeight h-[900px] md:h-screen w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
 <main className='md:w-[90%] w-[95%] widthCards text-white'>
 <nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
 
@@ -301,7 +301,7 @@ useEffect(() => {
 </div>
 
 <div className='text-white flex flex-col gap-5 items-center justify-center'>
-  <h2 className='text-center text-3xl md:text-5xl xl:text-7xl font-extrabold flex-col flex items-center justify-center hero1'>One tap and 
+  <h2 className='text-center text-3xl md:text-5xl xl:text-7xl font-extrabold flex-col flex items-center  justify-center hero1'>One tap and 
  <span className='flex gap-3'> you're 
  <span className='text-secondary hero2'>done.</span></span>
   </h2>
