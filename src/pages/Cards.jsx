@@ -499,21 +499,21 @@ Never miss a payment with <br className='lg:block hidden'/> the Xcard's dollar M
 <h2 className='font-extrabold xl:text-6xl md:text-5xl pb-20  text-4xl text-center lg:text-start'>
 Spend safer online  <br className=''/> with our card security measures
 </h2>
-<div className={`flex  gap-10 transition-all duration-300  pb-10 ${come && ("border-b-[1px]   border-b-primary bg-[whitesmoke] py-5")}  px-5`}>
+<div className={`flex  gap-10 transition-all duration-300  pb-10 ${come && ("border-b-[1px]   border-b-[rgba(0,0,0,0.1)] bg-[whitesmoke] py-5")}  px-5`}>
   <span className='text-2xl'><PiCardsThreeBold/></span>
 <div>
 <p className='text-xl font-extrabold'>Freeze card</p>
 {come && <h3 className='pt-5 text-[rgba(0,0,0,0.7)]  transition-all duration-300'>Freeze your card to prevent it from unauthorized use, and unfreeze it when the coast is clear.</h3>}
 </div>
 </div>
-<div className={`flex  gap-10 transition-all duration-300  pb-10 ${get && ("border-b-[1px]   border-b-primary bg-[whitesmoke] py-5")} px-5`}>
+<div className={`flex  gap-10 transition-all duration-300  pb-10 ${get && ("border-b-[1px]   border-b-[rgba(0,0,0,0.1)] bg-[whitesmoke] py-5")} px-5`}>
   <span className='text-2xl'><MdOutlineNotificationsActive/></span>
 <div>
 <p className='text-xl font-extrabold'>Instant notification</p>
 {get && <h3 className='pt-5 text-[rgba(0,0,0,0.7)]  transition-all duration-300'>Keep track of every completed card transaction you make with Grey.</h3>}
 </div>
 </div>
-<div className={`flex  gap-10 transition-all duration-300  pb-10 ${came && ("border-b-[1px]   border-b-primary bg-[whitesmoke] py-5")} px-5`}>
+<div className={`flex  gap-10 transition-all duration-300  pb-10 ${came && ("border-b-[1px]   border-b-[rgba(0,0,0,0.1)] bg-[whitesmoke] py-5")} px-5`}>
   <span className='text-2xl'><SiGoogleauthenticator/></span>
 <div>
 <p className='text-xl font-extrabold'>Two-factor authentication</p>
