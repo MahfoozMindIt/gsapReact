@@ -58,7 +58,7 @@ const Footer = () => {
 <RiInstagramFill />
 <FaSquareXTwitter />
     </div>
-    <p className='font-light pt-10 text-sm'>USDT services for XPD are provided by Metax Payments Ltd, incorporated in Canada (BC1406436), is Registered at 28 19628, 55A Avenue, Langley, British Columbia, V3A 3X2. The company is duly registered as a Money Services Business with FINTRAC under registration number M23579425, ensuring adherence to Canadian financial laws and regulations.
+    <p className='font-light pt-10 text-sm'>USDT services for XCard are provided by Metax Payments Ltd, incorporated in Canada (BC1406436), is Registered at 28 19628, 55A Avenue, Langley, British Columbia, V3A 3X2. The company is duly registered as a Money Services Business with FINTRAC under registration number M23579425, ensuring adherence to Canadian financial laws and regulations.
 <br /><br />
 <span className='font-extrabold tracking-wider'>Disclaimer:</span> The author assumes no responsibility or liability for any errors or omissions in the content of this site. The information contained in this site is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness, or timeliness.
     </p>
