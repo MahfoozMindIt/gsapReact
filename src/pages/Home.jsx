@@ -288,8 +288,7 @@ setClick(!click);
   <span className='flex items-center sec2Span3'>
   <img src={paraPig} alt="" className='h-16 w-16'/> personal finances</span>
   </h2>
-<p className='md:w-[70%] text-center sec2p'>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.
+<p className='md:w-[70%] text-center sec2p'>Manage, send, receive & swap multiple cryptocurrencies—all in a single app
 </p>
 <div className='sec2Btn'>
   
