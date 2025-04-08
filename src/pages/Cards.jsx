@@ -17,7 +17,7 @@ import a1 from "../assets/sec4Cards1.webp";
 import a2 from "../assets/sec4Card2.webp";
 import a3 from "../assets/sec4Card3.webp";
 import a4 from "../assets/sec4Card4.webp";
-import xcard2sec from "../assets/xcard2sec.png";
+import xcard2sec from "../assets/abc3.png";
 import { IoMenuSharp } from "react-icons/io5";
 import "../styles/Cards.css";
 import gsap from 'gsap';
