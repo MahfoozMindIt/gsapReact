@@ -399,8 +399,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
  <div className='flex flex-col gap-5 sec5a'>
 <h2 className='text-7xl md:text-8xl font-extrabold'>  Buy crypto, <br />
 sell crypto.</h2>
-  <p>
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Suspendisse <br /> varius enim in eros elementum.
+  <p>Your gateway to crypto, Buy & Sell with confidence.
+    <br className=''/>
+  Buy crypto easily, sell when you want, Total control
   </p>
  </div><div className='flex flex-col gap-10'>
   <div className='flex gap-5 items-center'>
@@ -443,11 +444,11 @@ sell crypto.</h2>
 <p className='sec5d2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> varius enim in eros elementum.</p>
 <div className='md:flex-row gap-10 md:gap-0 md:justify-between flex flex-col justify-center'>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold sec5et1'>23+</h3>
+    <h3 className='text-secondary text-7xl font-extrabold sec5et1'>Unlimited</h3>
     <p className='font-semibold text-xl sec5eb1'>Rewards</p>
   </div>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold sec5et2'>2%</h3>
+    <h3 className='text-secondary text-7xl font-extrabold sec5et2'>0%</h3>
     <p className='font-semibold text-xl sec5eb2'>Interest Rate</p>
   </div>
   <div>
