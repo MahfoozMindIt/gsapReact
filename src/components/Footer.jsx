@@ -23,7 +23,7 @@ const Footer = () => {
   </div>
 
 </Link>
-<div className='text-xl flex justify-between pt-28'>
+<div className='md:text-xl flex text-sm justify-between pt-28'>
 <div className='flex items-center gap-2'>
 <Link to='/' className='l'>Home</Link>
 <FiArrowUpRight className='text-xl'/>
@@ -32,6 +32,18 @@ const Footer = () => {
 <FiArrowUpRight className='text-xl'/>
 </div><div className='flex items-center gap-2'>
 <Link to='/contact' className=''>Contact us</Link>
+<FiArrowUpRight className='text-xl'/>
+</div>
+</div>
+<div className='text-sm md:text-xl flex justify-between pt-5'>
+<div className='flex items-center gap-2'>
+<Link to='/privacy-policy' className=''>Privacy Policy</Link>
+<FiArrowUpRight className='text-xl'/>
+</div><div className='flex items-center gap-2'>
+<Link to='/cookies' className=''>Cookies</Link>
+<FiArrowUpRight className='text-xl'/>
+</div><div className='flex items-center gap-2'>
+<Link to='/terms-and-conditions' className=''>Terms & Conditions</Link>
 <FiArrowUpRight className='text-xl'/>
 </div>
 </div>

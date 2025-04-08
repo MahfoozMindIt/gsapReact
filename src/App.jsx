@@ -9,6 +9,9 @@ const Home=lazy(()=>import('./pages/Home'));
 const Services=lazy(()=>import('./pages/Services'))
 const Contact=lazy(()=>import('./pages/Contact'))
 const Cards=lazy(()=>import('./pages/Cards'))
+const PrivacyPolicy=lazy(()=>import('./pages/PrivacyPolicy'))
+const Cookies=lazy(()=>import('./pages/Cookies'))
+const Terms=lazy(()=>import('./pages/Terms'))
 
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
        <Route path='/services' element={<Services/>} />
        <Route path='/contact' element={<Contact/>} />
        <Route path='/cards' element={<Cards/>} />
+       <Route path='/terms-and-conditions' element={<Terms/>} />
+       <Route path='/cookies' element={<Cookies/>} />
+       <Route path='/privacy-policy' element={<PrivacyPolicy/>} />
         </Route>
       </Routes></ScrollToTop>
     </Router>
