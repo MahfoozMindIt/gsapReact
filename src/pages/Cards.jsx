@@ -601,7 +601,7 @@ Pay however works best for you.</p>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
     <h2 className='lg:text-6xl text-5xl font-extrabold pt-14 lg:pt-0 pb-7'>
     ‍Real-time fraud monitoring</h2>
-    <p className='lg:w-[75%]'>Real-time alerts for anything unusual ,Crypto card without stress.
+    <p className='lg:w-[75%]'>Real-time alerts for anything unusual , Crypto card without stress.
     Continuous fraud monitoring around the clock.</p>
 </div>
 <img src={a4} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
