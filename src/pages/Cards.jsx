@@ -545,7 +545,7 @@ Spend safer online  <br className=''/> with our card security measures
 <button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
 </div>
 </div>
-<div className='grid grid-cols-1 md:grid-cols-2 gap-10 '>
+<div className='grid grid-cols-1 md:grid-cols-2 gap-32 '>
 
 <img src={s1} alt="" className='s1'/>
 <img src={s2} alt="" className='s2'/>
