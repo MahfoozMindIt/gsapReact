@@ -548,8 +548,8 @@ Spend safer online  <br className=''/> with our card security measures
 <div className='grid grid-cols-1 md:grid-cols-2 gap-32 '>
 
 <img src={s1} alt="" className='s1'/>
-<img src={s2} alt="" className='s2'/>
 <img src={s3} alt="" className='s3'/>
+<img src={s2} alt="" className='s2'/>
 <img src={s4} alt="" className='s4'/>
 
     </div></main></section>
