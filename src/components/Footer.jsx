@@ -2,7 +2,7 @@ import React from 'react';
 import "../styles/Home.css"
 import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import logo from "../assets/xcardLogo.png";
+import logo from "../assets/FinalXcard.png";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
@@ -16,7 +16,7 @@ const Footer = () => {
 <Link to='/contact' className='w-full hover:scale-[1.1] transition-all duration-500 flex justify-center flex-col items-center pt-20'>
   <h2 className='md:text-3xl text-xl font-bold'>We are waiting for your call</h2>
   <div className='flex items-center gap-5 pt-5'>
-  <h1 className='md:text-8xl text-4xl font-extrabold '>Call XCard</h1>
+  <h1 className='md:text-8xl text-4xl font-extrabold flex items-center gap-3'>Call <img src={logo} alt="" className='w-60'/></h1>
   <span className=' text-black bg-white rounded-full p-3'>
     <FiArrowUpRight className='md:text-4xl text-2xl'/>
   </span>

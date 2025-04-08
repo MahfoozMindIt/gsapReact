@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Contact.css"
-import Xcard from "../assets/xcardLogo.png";
+import Xcard from "../assets/FinalXcard.png";
 import { Link } from 'react-router-dom'
 import { IoMenuSharp } from 'react-icons/io5';
 import { RiMailSendLine } from 'react-icons/ri';

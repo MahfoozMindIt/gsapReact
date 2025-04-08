@@ -14,7 +14,7 @@ import r4 from "../assets/homesec6-4.webp";
 import r5 from "../assets/homesec6-5.png";
 import boyCard from "../assets/boyCard.webp";
 import sec5 from "../assets/Image.png";
-import Xcard from "../assets/xcardLogo.png";
+import Xcard from "../assets/FinalXcard.png";
 import { FaCloudMeatball, FaCommentDollar, FaCross, FaHandHoldingUsd } from "react-icons/fa";
 import { BsFillAwardFill } from "react-icons/bs";
 import { IoMenuSharp } from "react-icons/io5";

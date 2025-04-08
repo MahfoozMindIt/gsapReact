@@ -8,7 +8,7 @@ import s1 from "../assets/y1.png";
 import s2 from "../assets/y2.png";
 import s3 from "../assets/y3.png";
 import s4 from "../assets/y4.png";
-import Xcard from "../assets/xcardLogo.png";
+import Xcard from "../assets/FinalXcard.png";
 import bullet from "../assets/bulletXcard.svg";
 import come1 from "../assets/abc1.png";
 import get1 from "../assets/get1.avif";
