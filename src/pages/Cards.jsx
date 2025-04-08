@@ -345,7 +345,7 @@ Supports BTC, ETH, USDC, USDT, and more  & many more  virtual debit card that ne
 </div>
 </div>
 <div className='lg:w-[50%] flex justify-center  items-center'>
-  <img src={xcard2sec} alt="" className='w-96 l4'/>
+  <img src={xcard2sec} alt="" className=' l4'/>
 </div>
 
 </main></section>
