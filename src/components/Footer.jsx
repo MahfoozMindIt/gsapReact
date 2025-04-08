@@ -4,6 +4,9 @@ import { FiArrowUpRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import logo from "../assets/xcardLogo.png";
 import { MdOutlineMailOutline } from "react-icons/md";
+import { FaFacebookSquare, FaLinkedin } from 'react-icons/fa';
+import { RiInstagramFill } from 'react-icons/ri';
+import { FaSquareXTwitter } from 'react-icons/fa6';
 
 
 const Footer = () => {
@@ -34,23 +37,23 @@ const Footer = () => {
 </div>
 
 <section className=' justify-between flex flex-col gap-10 lg:flex-row mt-20 p-10 py-20 ' style={{backgroundImage:"linear-gradient(to right,#9A60FF 10%, #9A60FF 50%   )"}}>
-  <div className='lg:w-[50%] flex flex-col items-center lg:items-start lg:justify-start justify-center'>
+  <div className=' flex flex-col items-center lg:items-start lg:justify-start justify-center'>
     <img src={logo} alt="" className='w-44 pb-5'/>
-    <p className='font-light text-sm'>
-    Lorem ipsum dolor sit amet, consectetur   adipiscing elit
+    
+    <div className='flex text-4xl gap-4'>
+<FaLinkedin/>
+<FaFacebookSquare />
+<RiInstagramFill />
+<FaSquareXTwitter />
+    </div>
+    <p className='font-light pt-10 text-sm'>USDT services for XPD are provided by Metax Payments Ltd, incorporated in Canada (BC1406436), is Registered at 28 19628, 55A Avenue, Langley, British Columbia, V3A 3X2. The company is duly registered as a Money Services Business with FINTRAC under registration number M23579425, ensuring adherence to Canadian financial laws and regulations.
+<br /><br />
+<span className='font-extrabold tracking-wider'>Disclaimer:</span> The author assumes no responsibility or liability for any errors or omissions in the content of this site. The information contained in this site is provided on an "as is" basis with no guarantees of completeness, accuracy, usefulness, or timeliness.
     </p>
+    <p className='pt-10'>Copyright © 2025 <span className='font-bold'>XCard</span>. All Rights Reserved.</p>
   </div>
 
-  <div className='flex flex-col gap-5   text-black '>
-    <p className='text-3xl font-semibold text-white'>Newsletter</p>
-    <div className='flex items-center  gap-5  flex-col md:flex-row p-3 rounded-xl bg-white'>
-      <div className='flex items-center gap-3 md:text-xl text-hover'>
-      <MdOutlineMailOutline className='text-black'/>
-      <input type="email" name="" id="" className='outline-0 md:w-80 w-56 placeholder:text-[15px]' placeholder='Enter your email' />
-      </div>
-      <button className='bg-hover w-44 py-3 rounded-xl text-white'>Get Started</button>
-    </div>
-  </div>
+
 </section>
       </div>
     </div>

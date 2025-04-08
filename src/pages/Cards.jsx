@@ -562,12 +562,12 @@ Spend safer online  <br className=''/> with our card security measures
 </h2>
 </div>
 
-<div className='w-full flex justify-center pt-10'>
+{/* <div className='w-full flex justify-center pt-10'>
 <p className='lg:w-[50%] w-[85%] md:w-[70%] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
 
-</div>
+</div> */}
 
-<div id='cards' className='grid  grid-cols-1 gap-10 mt-20'>
+<div id='cards' className='grid  grid-cols-1 gap-10 mt-10'>
 
 <div id='card_1' className='bg-primary  card1 flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5  py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
@@ -620,10 +620,11 @@ Spend safer online  <br className=''/> with our card security measures
 </h2>
 </div>
 
-<div className='w-full flex justify-center pt-2'>
+{/* <div className='w-full flex justify-center pt-2'>
 <p className='lg:w-[50%] w-[85%] md:w-[70%] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
 
-</div></div>
+</div> */}
+</div>
 {/* frequently asked questions.... */}
 <section className="lg:w-[75%] md:w-[90%] w-full flex-col flex gap-5">
       {[0, 1,2,3,4,5,6,7,8].map((index) => (
