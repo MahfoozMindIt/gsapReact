@@ -426,7 +426,7 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
 
 {/* another section starts */}
 
-<section className=' w-full flex bg-[whitesmoke] dollarCard text-hover rounded-t-2xl mt-44 justify-center py-44 '>
+<section className=' w-full flex bg-[whitesmoke] dollarCard text-hover rounded-t-2xl mt-44 justify-center pt-20 '>
 <main className='md:w-[90%] w-[95%] widthCards  flex flex-col items-center justify-center gap-20' >
 <h2 className='md:text-6xl text-4xl font-extrabold whyChoose  text-center md:leading-20'> VIRTUAL CRYPTO CARD <br className='hidden md:block'/> ANYTIME, ANYWHERE
 </h2>
@@ -477,7 +477,7 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
   
 <img src={hand} alt="" className='hand'/>
 </div>
-<div className='w-full flex justify-center flex-col gap-7 n3 items-center'>
+<div className='w-full flex justify-center flex-col relative -top-36 gap-2 n3 items-center'>
 <h2 className='md:text-6xl text-4xl font-extrabold  text-center'> Start your crypto payment <br className='lg:block hidden'/> journey with XCard.
 
 </h2>
@@ -612,7 +612,7 @@ Spend safer online  <br className=''/> with our card security measures
 
 {/* 5th section frequently asked questions*/}
 
-<section className=' w-full flex section3 justify-center pt-44 section3Cards'>
+{/* <section className=' w-full flex section3 justify-center pt-44 section3Cards'>
 <main className='md:w-[90%] w-[95%] widthCards flex flex-col items-center justify-center gap-20' >
 <div className='flex flex-col items-center justify-center gap-5'>
 <div className='flex justify-center w-full '>
@@ -620,12 +620,7 @@ Spend safer online  <br className=''/> with our card security measures
 </h2>
 </div>
 
-{/* <div className='w-full flex justify-center pt-2'>
-<p className='lg:w-[50%] w-[85%] md:w-[70%] text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
-
-</div> */}
 </div>
-{/* frequently asked questions.... */}
 <section className="lg:w-[75%] md:w-[90%] w-full flex-col flex gap-5">
       {[0, 1,2,3,4,5,6,7,8].map((index) => (
         <div
@@ -655,7 +650,7 @@ Spend safer online  <br className=''/> with our card security measures
       ))}
     </section>
 
-</main></section>
+</main></section> */}
 
 
     </div>
