@@ -369,17 +369,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
     <h2 className='text-hover font-extrabold sec4h text-center xl:text-start text-4xl md:text-7xl'>An app that does it all in one place
     </h2>
     <p className='text-hover text-md sec4p text-center xl:text-start xl:w-[90%] font-medium'>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.
+      Manage, send, receive & swap multiple cryptocurrencies—all in a single app ,  Top up your XCard with USDC, USDT, BTC, or ETH—straight from your wallet.
     </p>
   <section className='flex flex-col gap-5 w-full items-center xl:items-start'>
   <div className='flex items-center sec4p1 gap-3'>
-      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Smooth & User-Friendly
+</p>
     </div>
     <div className='flex items-center sec4p2 gap-3'>
-      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Benefit-Focused
+      </p>
     </div>
     <div className='flex items-center sec4p3 gap-3'>
-      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Concise & Clear </p>
     </div>
   </section>
   </div>
