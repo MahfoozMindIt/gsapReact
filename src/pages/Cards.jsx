@@ -304,8 +304,7 @@ useEffect(() => {
  <span className='flex gap-3'> you're 
  <span className='text-secondary hero2'>done.</span></span>
   </h2>
-<p className=' text-center heroPara'>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p className=' text-center heroPara'>New Crypto Card - Make Payment <br /> With Crypto Card Anytime, Anywhere.
 </p>
 <div className='heroBtn'>
   
