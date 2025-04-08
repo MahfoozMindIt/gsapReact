@@ -8,7 +8,7 @@ import { MdEmail } from 'react-icons/md';
 const Footer = () => {
   return (
     <div className='flex justify-center w-full mt-32' style={{backgroundImage:"linear-gradient(to right,#7D40E9 10%,#7D40E9 50%   )"}}>
-      <div  className='md:w-[90%] w-[95%] widthHome py-20 text-white'>
+      <div  className='md:w-[90%] w-[95%] widthHome pt-20 pb-5 text-white'>
 <Link to='/contact' className='w-full hover:scale-[1.1] transition-all duration-500 flex justify-center flex-col items-center pt-20'>
   <h2 className='md:text-3xl text-xl font-bold'>We are waiting for your call</h2>
   <div className='flex items-center gap-5 pt-5'>
