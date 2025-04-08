@@ -11,7 +11,7 @@ import { ImOffice } from 'react-icons/im';
 const Contact = () => {
   return (
     <div className='' style={{overflowX:"hidden !important"}}>
-    <section className='flex justify-center bannerContact absolute   rounded-b-3xl'>
+    <section className='flex justify-center bannerContact absolute h-auto pb-20  rounded-b-3xl'>
 <main className='md:w-[90%] w-[95%] widthContact text-white'>
 <nav className='justify-between   flex items-center pt-5 text-[17px] font-medium' >
 
@@ -29,39 +29,41 @@ const Contact = () => {
  </div>
 </nav>
 
-<main className='flex h-[70vh] justify-center items-center'>
-<h1 className='md:text-8xl text-5xl textBanner font-extrabold'>
-Reach out here
+<main className='flex mt-20 justify-center flex-col items-center w-full '>
+<h1 className='md:text-8xl text-5xl textBanner pb-20 font-extrabold'>
+Reach out us
 </h1>
-</main>
 
-</main>
-    </section>
-    <section className='w-full h-[100vh] bg-[rgba(0,0,0,0.4)] relative top-0 rounded-b-3xl overContact'></section>
-
-
-    <section className='flex justify-center mt-10'>
-<main className='md:w-[90%] w-[95%] widthContact '>
-<div className='grid lg:grid-cols-3 md:grid-cols-2  grid-cols-1 gap-14'>
-<div className='bg-primary text-white rounded-xl flex flex-col gap-3 p-5'>
+<div className='grid lg:grid-cols-3 xl:w-[90%] w-full md:grid-cols-2  grid-cols-1 gap-14'>
+<div className='bg-[#9A60FF] text-white textBanner rounded-xl flex flex-col gap-3 p-5'>
 <RiMailSendLine className='text-2xl'/>
 <p className='text-xl'>Support Email</p>
-<p className=''>hello@zurabank.com</p>
+<p className=''>hello@example.com</p>
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Email Us</button>
 </div>
-<div className='bg-primary text-white rounded-xl flex flex-col gap-3 p-5'>
+<div className='bg-[#9A60FF] textBanner text-white rounded-xl flex flex-col gap-3 p-5'>
 <PiPhoneCall className='text-2xl'/>
 <p className='text-xl'>Phone Number</p>
 <p className=''>1800-000-0000</p>
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Call Us</button>
 </div>
-<div className='bg-primary text-white rounded-xl md:col-span-2 col-span-1 lg:col-span-1 flex flex-col gap-3 p-5'>
+<div className='bg-[#9A60FF] textBanner text-white rounded-xl md:col-span-2 col-span-1 lg:col-span-1 flex flex-col gap-3 p-5'>
 <ImOffice className='text-2xl'/>
 <p className='text-xl'>Headquarters</p>
 <p className=''>12 Cherry Street, NJ, 10384</p>
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Visit Us</button>
 </div>
 </div>
+</main>
+
+</main>
+    </section>
+    <section className='w-full xl:h-[637px] lg:h-[639px] md:h-[923px] h-[1157px] pb-20 bg-[rgba(0,0,0,0.4)] relative top-0 rounded-b-3xl overContact'></section>
+
+
+    <section className='flex justify-center mt-10'>
+<main className='md:w-[90%] w-[95%] widthContact '>
+
 </main></section>
 
 
