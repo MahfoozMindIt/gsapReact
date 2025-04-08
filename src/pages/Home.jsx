@@ -440,8 +440,8 @@ sell crypto.</h2>
 </div>
 <div className='xl:w-[50%]'>
 <div className='w-[85%] flex flex-col gap-10'>
-<h2 className='text-7xl font-extrabold sec5d1'>Try our credit card for a free 30+ days</h2>
-<p className='sec5d2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse <br /> varius enim in eros elementum.</p>
+<h2 className='text-6xl font-extrabold sec5d1 leading-18 tracking-wide'>Try our crypto virtual card experience the future of payments today!</h2>
+<p className='sec5d2'>Tap into the future – your crypto, your virtual card, limitless possibilities</p>
 <div className='md:flex-row gap-10 md:gap-0 md:justify-between flex flex-col justify-center'>
   <div>
     <h3 className='text-secondary text-7xl font-extrabold sec5et1'>Unlimited</h3>
