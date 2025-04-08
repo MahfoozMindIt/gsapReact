@@ -76,12 +76,12 @@ Reach out here
     <div className='flex flex-col gap-3'>
       
       <label htmlFor="" className='text-[18px] font-semibold'>Email</label>
-      <input type="text" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='example@email.com' name="" id="" />
+      <input type="email" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='example@email.com' name="" id="" />
       </div>
       <div className='flex flex-col gap-3'>
       
       <label htmlFor="" className='text-[18px] font-semibold'>Phone Number</label>
-      <input type="text" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='1800-000-0000' name="" id="" />
+      <input type="" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='1800-000-0000' name="" id="" />
       </div>
       <div className='flex flex-col gap-3'>
       
