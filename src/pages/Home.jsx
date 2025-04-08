@@ -401,7 +401,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
 sell crypto.</h2>
   <p>Your gateway to crypto, Buy & Sell with confidence.
     <br className=''/>
-  Buy crypto easily, sell when you want, Total control
+  Buy crypto easily, sell when you want, Total control.
   </p>
  </div><div className='flex flex-col gap-10'>
   <div className='flex gap-5 items-center'>
@@ -471,7 +471,7 @@ sell crypto.</h2>
 <h2 className='text-center text-4xl md:text-7xl sec3h font-extrabold text-hover'>
 Why Choose Xcard
 </h2>
-<p className='text-center text-hover sec3p w-[80%]'>Effortless Crypto Deposits Quick, Simple, Secures, Top up your XCard with USDC, USDT, BTC, or ETH—straight from your wallet.
+<p className='text-center text-hover sec3p w-[80%]'>Effortless Crypto Deposits Quick, Simple, Secures, Top up your XCard with USDC, USDT, BTC, or ETH straight from your wallet.
 </p>
 </div>
 
