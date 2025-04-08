@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { IoMenuSharp } from 'react-icons/io5';
 import { RiMailSendLine } from 'react-icons/ri';
 import { SiMinutemailer } from 'react-icons/si';
+import { PiPhoneCall } from 'react-icons/pi';
+import { ImOffice } from 'react-icons/im';
 
 const Contact = () => {
   return (
@@ -48,13 +50,13 @@ Reach out here
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Email Us</button>
 </div>
 <div className='bg-primary text-white rounded-xl flex flex-col gap-3 p-5'>
-<RiMailSendLine className='text-2xl'/>
+<PiPhoneCall className='text-2xl'/>
 <p className='text-xl'>Phone Number</p>
 <p className=''>1800-000-0000</p>
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Call Us</button>
 </div>
-<div className='bg-primary text-white rounded-xl flex flex-col gap-3 p-5'>
-<RiMailSendLine className='text-2xl'/>
+<div className='bg-primary text-white rounded-xl md:col-span-2 col-span-1 lg:col-span-1 flex flex-col gap-3 p-5'>
+<ImOffice className='text-2xl'/>
 <p className='text-xl'>Headquarters</p>
 <p className=''>12 Cherry Street, NJ, 10384</p>
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Visit Us</button>
