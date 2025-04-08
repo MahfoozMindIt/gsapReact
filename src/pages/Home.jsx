@@ -236,7 +236,7 @@ setClick(!click);
    <Link to='/' className='cursor-pointer'> <li className='l1'>Home</li></Link>
     <Link to='/cards'>
     <li className='l2'>Cards</li></Link>
-    <li className='l3'>Contact</li>
+      <Link to='/contact'> <li className='l3'>Contact</li></Link>
   </ul>
   <div className='navButton'>
     
@@ -248,6 +248,7 @@ setClick(!click);
              <div className="flex flex-col gap-2 w-[100%] h-full p-5">
               <Link to='/'><h2 className='text-primary font-bold text-2xl w-full'>Home</h2> <span></span></Link>
               <Link to='/cards'><h2 className='text-primary font-bold text-2xl w-full'>Cards</h2></Link>
+              <Link to='/contact'><h2 className='text-primary font-bold text-2xl w-full'>Contact</h2></Link>
              </div>
             </div></div>)}
 

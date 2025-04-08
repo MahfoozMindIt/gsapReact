@@ -282,7 +282,7 @@ useEffect(() => {
    <Link to='/' className='cursor-pointer'> <li className='l1'>Home</li></Link>
     <Link to='/cards'>
     <li className='l2'>Cards</li></Link>
-    <li className='l3'>Contact</li>
+      <Link to='/contact'> <li className='l3'>Contact</li></Link>
   </ul>
   <div className='navButton'>
     
