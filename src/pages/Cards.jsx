@@ -329,11 +329,13 @@ useEffect(() => {
 
 <div className='flex flex-col gap-7 xl:w-[47%] l1 lg:-[50%]'>
   
-<h2 className='font-extrabold xl:text-7xl md:text-5xl  text-4xl text-center lg:text-start'>
-An international dollar <br className='xl:hidden'/> card that works
+<h2 className='font-extrabold xl:text-7xl md:text-5xl  text-4xl text-center lg:text-start xl:leading-20'>
+  An International CRYPTO <br className='xl:hidden'/> card that works like FIAT
 </h2>
-<p className='text-center lg:text-start l2'>
-Spend freely at home and abroad with a globally accepted <br className='md:block lg:hidden xl:block hidden'/> virtual debit card that never declines.
+<p className='text-center lg:text-start l2 lg:w-[80%]'>
+Seamless blockchain payments with your crypto
+Deposit via Bitcoin, Ethereum, Solana, Polygon, Tron 
+Supports BTC, ETH, USDC, USDT, and more  & many more  virtual debit card that never declines.
 
 </p>
 <div className=' w-full flex l3 justify-center lg:justify-start'>
@@ -426,9 +428,7 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
 
 <section className=' w-full flex bg-[whitesmoke] dollarCard text-hover rounded-t-2xl mt-44 justify-center py-44 '>
 <main className='md:w-[90%] w-[95%] widthCards  flex flex-col items-center justify-center gap-20' >
-<h2 className='md:text-6xl text-4xl font-extrabold whyChoose  text-center'>
-Why choose <br className='hidden md:block'/>
-our virtual dollar <br className='hidden md:block'/> Mastercard?
+<h2 className='md:text-6xl text-4xl font-extrabold whyChoose  text-center md:leading-20'> VIRTUAL CRYPTO CARD <br className='hidden md:block'/> ANYTIME, ANYWHERE
 </h2>
 <section className='flex flex-col gap-5'>
   
@@ -478,9 +478,13 @@ our virtual dollar <br className='hidden md:block'/> Mastercard?
 <img src={hand} alt="" className='hand'/>
 </div>
 <div className='w-full flex justify-center flex-col gap-7 n3 items-center'>
-<h2 className='md:text-6xl text-4xl font-extrabold  text-center'>
-Never miss a payment with <br className='lg:block hidden'/> the Xcard's dollar Mastercard
+<h2 className='md:text-6xl text-4xl font-extrabold  text-center'> Start your crypto payment <br className='lg:block hidden'/> journey with XCard.
+
 </h2>
+<ul className='flex gap-44 list-disc text-3xl py-10 font-bold'>
+  <li>Seamless</li>
+  <li> Secure</li>
+</ul>
 <button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Yours Now</button>
 
 </div>
