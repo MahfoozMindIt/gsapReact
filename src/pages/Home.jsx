@@ -258,7 +258,7 @@ setClick(!click);
     Start your <br />
     Crypto Card <span className='px-3 py-1 rounded-full border-[1px] border-white'>Journey</span>
     </h1>
-    <p className='py-5 xl:w-[89%]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum.</p>
+    <p className='py-5 xl:w-[80%]'>Instant, secure, and hassle-free—turn your crypto into everyday purchases with Xcard.</p>
   
     <div className='flex xl:flex-row flex-col  xl:items-center gap-5'>
   <button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white'>Sign Up</button>

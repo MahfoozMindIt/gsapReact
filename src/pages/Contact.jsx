@@ -35,19 +35,19 @@ Reach out us
 </h1>
 
 <div className='grid lg:grid-cols-3 xl:w-[90%] w-full md:grid-cols-2  grid-cols-1 gap-14'>
-<div className='bg-[#9A60FF] text-white textBanner rounded-xl flex flex-col gap-3 p-5'>
+<div className='bg-[#9a60ff85] text-white textBanner rounded-xl flex flex-col gap-3 p-5'>
 <RiMailSendLine className='text-2xl'/>
 <p className='text-xl'>Support Email</p>
 <p className=''>hello@example.com</p>
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Email Us</button>
 </div>
-<div className='bg-[#9A60FF] textBanner text-white rounded-xl flex flex-col gap-3 p-5'>
+<div className='bg-[#9a60ff85] textBanner text-white rounded-xl flex flex-col gap-3 p-5'>
 <PiPhoneCall className='text-2xl'/>
 <p className='text-xl'>Phone Number</p>
 <p className=''>1800-000-0000</p>
 <button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Call Us</button>
 </div>
-<div className='bg-[#9A60FF] textBanner text-white rounded-xl md:col-span-2 col-span-1 lg:col-span-1 flex flex-col gap-3 p-5'>
+<div className='bg-[#9a60ff85] textBanner text-white rounded-xl md:col-span-2 col-span-1 lg:col-span-1 flex flex-col gap-3 p-5'>
 <ImOffice className='text-2xl'/>
 <p className='text-xl'>Headquarters</p>
 <p className=''>12 Cherry Street, NJ, 10384</p>
