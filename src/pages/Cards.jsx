@@ -573,7 +573,9 @@ Spend safer online  <br className=''/> with our card security measures
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
     <h2 className='text-5xl lg:text-6xl font-extrabold pt-14 lg:pt-0 pb-7'>
     Contactless payments</h2>
-    <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
+    <p className='lg:w-[75%]'>Spend your crypto with a tap,
+contactless, borderless, effortless
+The future of payments is with Xcard.</p>
 </div>
 <img src={a1} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
 </div>
@@ -581,23 +583,26 @@ Spend safer online  <br className=''/> with our card security measures
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
     <h2 className='text-5xl lg:text-6xl font-extrabold pt-14 lg:pt-0 pb-7'>
     Flexible payments</h2>
-    <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
+    <p className='lg:w-[75%]'>Your money, your rules.
+Flexible payment options
+Pay however works best for you.</p>
 </div>
 <img src={a2} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
 </div>
-<div id='card_3' className='bg-primary card3  flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
+{/* <div id='card_3' className='bg-primary card3  flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
     <h2 className='lg:text-6xl text-5xl font-extrabold pt-14 lg:pt-0 pb-7'>
     Introductory APR</h2>
     <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
 </div>
 <img src={a3} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
-</div>
+</div> */}
 <div id='card_4' className='bg-primary card4  flex flex-col gap-20 md:flex-row rounded-2xl md:p-20 p-5 py-14'>
 <div className='text-white md:w-[50%] flex flex-col justify-center'>
     <h2 className='lg:text-6xl text-5xl font-extrabold pt-14 lg:pt-0 pb-7'>
     ‍Real-time fraud monitoring</h2>
-    <p className='lg:w-[75%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ea laborum laudantium veniam iste neque beatae porro alias voluptate, accusamus, temporibus tempora eos natus, tenetur esse!</p>
+    <p className='lg:w-[75%]'>Real-time alerts for anything unusual ,Crypto card without stress.
+    Continuous fraud monitoring around the clock.</p>
 </div>
 <img src={a4} alt="" className='md:w-[50%] pt-20 rounded-2xl'/>
 </div>
