@@ -272,7 +272,7 @@ useEffect(() => {
 
 
   return (
-    <div className='' style={{overflowX:"hidden !important"}}>
+    <div className='' style={{overflowX:"hidden !important "}}>
      <section className='flex justify-center bannerHeight h-[900px] md:h-screen w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
 <main className='md:w-[90%] w-[95%] widthCards text-white'>
 <nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
@@ -477,11 +477,11 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
   
 <img src={hand} alt="" className='hand'/>
 </div>
-<div className='w-full flex justify-center flex-col relative -top-36 gap-2 n3 items-center'>
+<div className='w-full flex justify-center flex-col relative -top-27 md:-top-36 gap-2 n3 items-center'>
 <h2 className='md:text-6xl text-4xl font-extrabold  text-center'> Start your crypto payment <br className='lg:block hidden'/> journey with XCard.
 
 </h2>
-<ul className='flex gap-44 list-disc text-3xl py-10 font-bold'>
+<ul className='flex md:gap-44 list-disc text-3xl py-10 flex-col md:flex-row font-bold'>
   <li>Seamless</li>
   <li> Secure</li>
 </ul>
