@@ -27,17 +27,33 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
 gsap.registerPlugin(ScrollTrigger);
 
+
+
+
+const words = ['Journey', 'Adventure', 'Voyage'];
+
 const Home = () => {
 
 
 const [click,setClick]=useState(false);
   const [isHovered , setIsHovered]=useState(false);
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 2000); // change word every 2 seconds
+
+    return () => clearInterval(interval);
+  }, []);
+
 const trueHover=()=>{
  setIsHovered(true);
 }
 const falseHover=()=>{
   setIsHovered(false);
  }
+ 
 
 //  Gsap Starts here
 useGSAP(() => {
@@ -104,6 +120,7 @@ scrub:2,
     duration: 0.5,
     stagger:0.2
   }),
+ 
   gsap.from('.hero1',{
     x:-10,
     opacity:0,
@@ -254,9 +271,14 @@ setClick(!click);
 
 <main className='flex flex-col lg:flex-row'>
   <div className='lg:w-[50%] mt-20 hero1'>
-    <h1 className='xl:text-[80px] text-6xl font-extrabold  leading-20 xl:leading-24'>
+    <h1 className='xl:text-[80px] text-6xl font-extrabold   leading-20 xl:leading-24'>
     Start your <br />
-    Crypto Card <span className='px-3 py-1 rounded-full border-[1px] border-white'>Journey</span>
+    <div className='flex flex-wrap gap-4'>
+      
+    <div> Crypto Card</div> <div className='rotating-text-container'>
+    <span id='text' key={index} className='px-3 py-1 rounded-full rotating-text border-[1px] border-white '> {words[index]}</span>
+    </div>
+    </div>
     </h1>
     <p className='py-5 xl:w-[80%]'>Instant, secure, and hassle-free—turn your crypto into everyday purchases with Xcard.</p>
   
