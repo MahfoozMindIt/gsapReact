@@ -408,7 +408,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
   </section>
   <div className='flex gap-5'>
     
-  <button className='px-7 py-3 text-white xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary w-fit'>Sign Up</button>
+  <button className='px-7 py-3 text-white   hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary w-fit'>Sign Up</button>
   
   </div>
   </div>
@@ -486,7 +486,7 @@ sell crypto.</h2>
 
 </div>
 
-<button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary w-fit'>Sign Up</button>
+<button className='px-7 py-3 text-hover  hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary w-fit'>Sign Up</button>
   
 </div>
 </div>
