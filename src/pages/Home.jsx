@@ -288,7 +288,7 @@ setClick(!click);
 
   </div>
   </div>
-  <img src={banner} alt="" className='md:w-[60%] h-[600px] ml-24 md:h-[100vh-2vh] xl:h-[656px] bannerImg z-[1] object-cover object-top heroImg'/>
+  <img src={banner} alt="" className='md:w-[60%] h-[552px] ml-24 md:h-[100vh-2vh] xl:h-[656px] bannerImg z-[1] object-cover object-top heroImg'/>
 </main>
 
 </main>
@@ -390,11 +390,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
   <div className='flex flex-col gap-10 xl:w-[49%]'>
     <h2 className='text-hover font-extrabold sec4h text-center xl:text-start text-4xl md:text-7xl'>An app that does it all in one place
     </h2>
-    <p className='text-hover text-md sec4p text-center xl:text-start xl:w-[90%] font-medium'>
+   <div className='w-full flex justify-center'>
+   <p className='text-hover text-md sec4p lg:w-[70%] xl:w-full text-center xl:text-start xl:w-[90%] font-medium'>
     Effortless Crypto Deposits  Quick, Simple, Secures,  Top up your XCard with USDC, USDT, BTC, or ETH—straight from your wallet.
     </p>
-  <section className='flex flex-col gap-5 w-full items-center xl:items-start'>
-  <div className='flex items-center sec4p1 gap-3'>
+   </div>
+  <section className='flex  w-full justify-center xl:justify-start'>
+ <div className='flex flex-col gap-5'> <div className='flex items-center sec4p1 gap-3'>
       <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Smooth & User-Friendly
 </p>
     </div>
@@ -404,11 +406,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
     </div>
     <div className='flex items-center sec4p3 gap-3'>
       <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Concise & Clear </p>
-    </div>
+    </div></div>
   </section>
   <div className='flex gap-5'>
-    
+    <div className='flex justify-center w-full xl:justify-start'>
+      
   <button className='px-7 py-3 text-white   hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary w-fit'>Sign Up</button>
+    </div>
   
   </div>
   </div>
@@ -466,8 +470,8 @@ sell crypto.</h2>
 <img src={boyCard} alt="" className='sec5d'/>
 </div>
 <div className='xl:w-[50%]'>
-<div className='w-[85%] flex flex-col gap-10'>
-<h2 className='text-6xl font-extrabold sec5d1 leading-18 tracking-wide'>Try our crypto virtual card experience the future of payments today!</h2>
+<div className='md:w-[85%] flex flex-col gap-10'>
+<h2 className='md:text-6xl text-4xl font-extrabold sec5d1 md:leading-18 tracking-wide'>Try our crypto virtual card experience the future of payments today!</h2>
 <p className='sec5d2 text-xl font-light'>Tap into the future – your crypto, your virtual card, limitless possibilities</p>
 <div className='md:flex-row gap-10 md:gap-0 md:justify-between flex flex-col justify-center'>
   <div>
