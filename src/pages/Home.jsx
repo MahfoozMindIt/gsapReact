@@ -79,11 +79,10 @@ scrub:2,
   })
   const tl4=gsap.timeline({
     scrollTrigger:{
-      trigger:".section3",
+      trigger:".section4",
       scroller:"body",
-      start:"top 50%",
-      end:"bottom -10%",
-      scrub:2,
+      start:"top 100%",
+      end:"bottom 0%",
           }
   })
   const tl5=gsap.timeline({
@@ -175,8 +174,8 @@ scrub:2,
   tl4.from('.sec4h,.sec4p,.sec4p1,.sec4p2,.sec4p3',{
     x:-40,
     opacity:0,
-    delay:3,
-    duration:2,
+    delay:1,
+    duration:1,
     stagger:0.2
   }),  tl5.from('.sec5a,.sec5bl1,.sec5bl2,.sec5bl3',{
     x:-40,
@@ -255,8 +254,9 @@ setClick(!click);
     <li className='l2'>Cards</li></Link>
       <Link to='/contact'> <li className='l3'>Contact</li></Link>
   </ul>
-  <div className='navButton'>
+  <div className='navButton flex gap-5'>
     
+  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
   <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
   <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl' onClick={mobileMenu}><IoMenuSharp/></button>
   </div>
@@ -280,7 +280,7 @@ setClick(!click);
     </div>
     </div>
     </h1>
-    <p className='py-5 xl:w-[80%]'>Instant, secure, and hassle-free—turn your crypto into everyday purchases with Xcard.</p>
+    <p className='py-5 text-xl xl:w-[80%]'>Instant, secure, and hassle-free—turn your crypto <br className='xl:block hidden'/> into everyday purchases with Xcard.</p>
   
     <div className='flex xl:flex-row flex-col  xl:items-center gap-5'>
   <button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white'>Sign Up</button>
@@ -310,11 +310,11 @@ setClick(!click);
   <span className='flex items-center sec2Span3'>
   <img src={paraPig} alt="" className='h-16 w-16'/> personal finances</span>
   </h2>
-<p className='md:w-[70%] text-center sec2p'>Manage, send, receive & swap multiple cryptocurrencies—all in a single app
+<p className='md:w-[70%] text-center sec2p text-[17px] font-light'>Manage, send, receive & swap multiple cryptocurrencies—all in a single app
 </p>
 <div className='sec2Btn'>
   
-<button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Started</button>
+<button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Sign Up</button>
 </div>
 </div>
 <div className='lg:flex hidden flex-col justify-between'>
@@ -330,7 +330,7 @@ setClick(!click);
      </section>
 
 {/* 3rd section starts */}
-<section className=' w-full flex section3 justify-center pt-44'>
+{/* <section className=' w-full flex section3 justify-center pt-44'>
 <main className='md:w-[90%] w-[95%] widthHome flex flex-col items-center justify-center gap-20' >
 
 <div className='flex flex-col items-center justify-center gap-5'>
@@ -381,11 +381,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
 </div>
 </div>
 
-</main></section>
+</main></section> */}
 
 
 {/* 4rth section starts */}
-<section className=' w-full flex justify-center pt-44'>
+<section className=' w-full section4 flex justify-center pt-44'>
 <main className='md:w-[90%] w-[95%] widthHome flex xl:flex-row flex-col  justify-center items-center  gap-20' >
   <div className='flex flex-col gap-10 xl:w-[49%]'>
     <h2 className='text-hover font-extrabold sec4h text-center xl:text-start text-4xl md:text-7xl'>An app that does it all in one place
@@ -406,6 +406,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
       <div className='bg-primary text-3xl text-white p-1 rounded-full w-fit'><TiTick/></div><p>Concise & Clear </p>
     </div>
   </section>
+  <div className='flex gap-5'>
+    
+  <button className='px-7 py-3 text-white xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary w-fit'>Sign Up</button>
+  
+  </div>
   </div>
   <div className='md:w-[55%]'>
     
@@ -463,22 +468,26 @@ sell crypto.</h2>
 <div className='xl:w-[50%]'>
 <div className='w-[85%] flex flex-col gap-10'>
 <h2 className='text-6xl font-extrabold sec5d1 leading-18 tracking-wide'>Try our crypto virtual card experience the future of payments today!</h2>
-<p className='sec5d2'>Tap into the future – your crypto, your virtual card, limitless possibilities</p>
+<p className='sec5d2 text-xl font-light'>Tap into the future – your crypto, your virtual card, limitless possibilities</p>
 <div className='md:flex-row gap-10 md:gap-0 md:justify-between flex flex-col justify-center'>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold sec5et1'>Unlimited</h3>
+    <h3 className='text-secondary text-6xl font-extrabold sec5et1'>Unlimited</h3>
     <p className='font-semibold text-xl sec5eb1'>Rewards</p>
   </div>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold sec5et2'>0%</h3>
+    <h3 className='text-secondary text-6xl font-extrabold sec5et2'>0%</h3>
     <p className='font-semibold text-xl sec5eb2'>Interest Rate</p>
   </div>
   <div>
-    <h3 className='text-secondary text-7xl font-extrabold sec5et3'>1mill</h3>
+    <h3 className='text-secondary text-6xl font-extrabold sec5et3'>1mill</h3>
     <p className='font-semibold text-xl sec5eb3'>Users</p>
   </div>
 
+
 </div>
+
+<button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary w-fit'>Sign Up</button>
+  
 </div>
 </div>
  </main>

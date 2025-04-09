@@ -34,6 +34,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Cards = () => {
 
 
+const [click,setClick]=useState(false);
 
   const [isHovered , setIsHovered]=useState(false);
   const [isHovered2 , setIsHovered2]=useState(false);
@@ -270,6 +271,9 @@ useEffect(() => {
 
 
 
+const mobileMenu=()=>{
+  setClick(!click); 
+  }
 
   return (
     <div className='' style={{overflowX:"hidden !important "}}>
@@ -284,12 +288,20 @@ useEffect(() => {
     <li className='l2'>Cards</li></Link>
       <Link to='/contact'> <li className='l3'>Contact</li></Link>
   </ul>
-  <div className='navButton'>
-    
-  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
-  <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl'><IoMenuSharp/></button>
-  </div>
-</nav>
+    <div className='navButton flex gap-5'>
+      
+    <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
+    <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
+    <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl' onClick={mobileMenu}><IoMenuSharp/></button>
+    </div>
+  </nav>
+  {click && (<div className='absolute w-[100%]'><div style={{zIndex:"100000"}} className="w-[90%] h-[50vh]  rounded-b-xl  flow bg-white relative top-0">
+               <div className="flex flex-col gap-2 w-[100%] h-full p-5">
+                <Link to='/'><h2 className='text-primary font-bold text-2xl w-full'>Home</h2> <span></span></Link>
+                <Link to='/cards'><h2 className='text-primary font-bold text-2xl w-full'>Cards</h2></Link>
+                <Link to='/contact'><h2 className='text-primary font-bold text-2xl w-full'>Contact</h2></Link>
+               </div>
+              </div></div>)}
 
 <main className='flex h-[70vh] pt-36 justify-between items-center'>
 <div className='flex h-full  flex-col justify-between'>
@@ -332,7 +344,7 @@ useEffect(() => {
 <h2 className='font-extrabold xl:text-7xl md:text-5xl  text-4xl text-center lg:text-start xl:leading-20'>
   An International CRYPTO <br className='xl:hidden'/> card that works like FIAT
 </h2>
-<p className='text-center lg:text-start l2 lg:w-[80%]'>
+<p className='text-center lg:text-start  l2 lg:w-[80%]'>
 Seamless blockchain payments with your crypto
 Deposit via Bitcoin, Ethereum, Solana, Polygon, Tron 
 Supports BTC, ETH, USDC, USDT, and more  & many more  virtual debit card that never declines.
@@ -340,7 +352,7 @@ Supports BTC, ETH, USDC, USDT, and more  & many more  virtual debit card that ne
 </p>
 <div className=' w-full flex l3 justify-center lg:justify-start'>
 
-<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Started</button>
+<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Sign Up</button>
 
 </div>
 </div>
@@ -485,7 +497,7 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
   <li>Seamless</li>
   <li> Secure</li>
 </ul>
-<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Yours Now</button>
+<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Sign Up</button>
 
 </div>
 </main></section>
@@ -523,6 +535,8 @@ Spend safer online  <br className=''/> with our card security measures
 {came && <h3 className='pt-5 text-[rgba(0,0,0,0.7)]  transition-all duration-300'>Add an extra layer of security to prevent unauthorized access to your accounts.</h3>}
 </div>
 </div>
+<button className='px-7 py-3 w-fit text-white hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary'>Sign Up</button>
+
 </div>
 <div className='lg:w-[50%] flex justify-center  items-center'>
   {come && <img src={come1} alt="" className=''/>}
@@ -542,7 +556,7 @@ Spend safer online  <br className=''/> with our card security measures
 </h2>
 <div className='sec3Btn'>
     
-<button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Get Started</button>
+<button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Sign Up</button>
 </div>
 </div>
 <div className='grid grid-cols-1 md:grid-cols-2 gap-32 '>
