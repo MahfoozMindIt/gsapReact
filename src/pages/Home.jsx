@@ -391,7 +391,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
     <h2 className='text-hover font-extrabold sec4h text-center xl:text-start text-4xl md:text-7xl'>An app that does it all in one place
     </h2>
    <div className='w-full flex justify-center'>
-   <p className='text-hover text-md sec4p lg:w-[70%] xl:w-full text-center xl:text-start xl:w-[90%] font-medium'>
+   <p className='text-hover text-md sec4p lg:w-[70%]  text-center xl:text-start xl:w-[90%] font-medium'>
     Effortless Crypto Deposits  Quick, Simple, Secures,  Top up your XCard with USDC, USDT, BTC, or ETH—straight from your wallet.
     </p>
    </div>
