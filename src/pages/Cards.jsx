@@ -436,19 +436,19 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
 <div className='flex flex-wrap justify-center gap-5'>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>Top up with your local currency</p>
+  <p className='text-xl font-semibold text-center'>Top up with your local currency</p>
 </div>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>Card withdrawals</p>
+  <p className='text-xl font-semibold text-center'>Card withdrawals</p>
 </div>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>No declined transaction fees</p>
+  <p className='text-xl font-semibold text-center'>No declined transaction fees</p>
 </div>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>Zero maintenance charges</p>
+  <p className='text-xl font-semibold text-center'>Zero maintenance charges</p>
 </div>
 </div>
 </div>
@@ -456,19 +456,19 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
 <div className='flex flex-wrap justify-center gap-5'>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>Card statements</p>
+  <p className='text-xl font-semibold text-center'>Card statements</p>
 </div>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>Instant transaction notifications</p>
+  <p className='text-xl font-semibold text-center'>Instant transaction notifications</p>
 </div>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>Card restrictions when you want</p>
+  <p className='text-xl font-semibold text-center'>Card restrictions when you want</p>
 </div>
 <div className='border-[1px] border-[grey] flex items-center gap-3 p-3 rounded-full text-black'>
   <img src={bullet} alt="" />
-  <p className='text-xl font-semibold'>Anti-fraud protection</p>
+  <p className='text-xl font-semibold text-center'>Anti-fraud protection</p>
 </div>
 </div>
 </div>
