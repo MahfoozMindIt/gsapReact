@@ -256,9 +256,11 @@ setClick(!click);
   </ul>
   <div className='navButton flex gap-5'>
     
-  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
-  <button className='px-7 py-3 text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
-  <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl' onClick={mobileMenu}><IoMenuSharp/></button>
+  <button className='px-7 py-3
+cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
+  <button className='px-7 py-3 cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
+  <button className='bg-hover 
+cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl' onClick={mobileMenu}><IoMenuSharp/></button>
   </div>
 </nav>
 {click && (<div className='absolute w-[100%]'><div style={{zIndex:"100000"}} className="w-[90%] h-[50vh]  rounded-b-xl  flow bg-white relative top-0">
@@ -283,8 +285,9 @@ setClick(!click);
     <p className='py-5 text-xl xl:w-[80%]'>Instant, secure, and hassle-free—turn your crypto <br className='xl:block hidden'/> into everyday purchases with Xcard.</p>
   
     <div className='flex xl:flex-row flex-col  xl:items-center gap-5'>
-  <button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white'>Sign Up</button>
-  <button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Contact Us</button>
+  <button className='px-7 py-3 cursor-pointer text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white'>Sign Up</button>
+  <Link to='/contact'>
+  <button className='px-7 py-3 cursor-pointer text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Contact Us</button></Link>
 
   </div>
   </div>
@@ -314,7 +317,7 @@ setClick(!click);
 </p>
 <div className='sec2Btn'>
   
-<button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Sign Up</button>
+<button className='px-7 py-3 cursor-pointer text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Sign Up</button>
 </div>
 </div>
 <div className='lg:flex hidden flex-col justify-between'>
@@ -390,7 +393,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
   <div className='flex flex-col gap-10 xl:w-[49%]'>
     <h2 className='text-hover font-extrabold sec4h text-center xl:text-start text-4xl md:text-7xl'>An app that does it all in one place
     </h2>
-   <div className='w-full flex justify-center'>
+   <div className='w-full flex justify-center xl:justify-start'>
    <p className='text-hover text-md sec4p lg:w-[70%]  text-center xl:text-start xl:w-[90%] font-medium'>
     Effortless Crypto Deposits  Quick, Simple, Secures,  Top up your XCard with USDC, USDT, BTC, or ETH—straight from your wallet.
     </p>
@@ -411,7 +414,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
   <div className='flex gap-5'>
     <div className='flex justify-center w-full xl:justify-start'>
       
-  <button className='px-7 py-3 text-white   hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary w-fit'>Sign Up</button>
+  <button className='px-7 py-3 cursor-pointer text-white   hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary w-fit'>Sign Up</button>
     </div>
   
   </div>
@@ -457,7 +460,7 @@ sell crypto.</h2>
   <h2 className='text-5xl font-extrabold sec5br3'>Manage accounts</h2>
   </div>
   
-<button className='px-7 py-3 w-fit text-hover sec5Btn hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Learn More</button>
+<button className='px-7 py-3 w-fit cursor-pointer text-hover sec5Btn hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Learn More</button>
   <div>
 
   </div>
@@ -490,7 +493,7 @@ sell crypto.</h2>
 
 </div>
 
-<button className='px-7 py-3 text-hover  hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary w-fit'>Sign Up</button>
+<button className='px-7 py-3 cursor-pointer text-hover  hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary w-fit'>Sign Up</button>
   
 </div>
 </div>

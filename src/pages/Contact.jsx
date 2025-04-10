@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import "../styles/Contact.css"
+import emailjs from "emailjs-com";
 import Xcard from "../assets/FinalXcard.png";
 import { Link } from 'react-router-dom'
 import { IoMenuSharp } from 'react-icons/io5';
@@ -9,6 +10,63 @@ import { PiPhoneCall } from 'react-icons/pi';
 import { ImOffice } from 'react-icons/im';
 
 const Contact = () => {
+
+
+  
+  const form = useRef();
+  const [formData, setFormData] = useState({
+    from_name: "",
+    from_email: "",
+    from_phone: "",
+    message: "",
+  });
+
+  const [success, setSuccess] = useState("");
+  const [error, setError] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    if (!formData.from_name && !formData.from_email && !formData.from_phone) {
+      setError("Please fill in all required fields.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.from_email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setError("");
+
+    emailjs
+      .sendForm(
+        "service_evqbfn8",
+        "template_616fa4w",
+        form.current,
+        "gN0bD3HgZrPY88RIa"
+      )
+      .then(
+        (result) => {
+          setSuccess("Message sent successfully!");
+          setFormData({ from_name: "", from_email: "", from_phone: "", message: "" });
+
+          setTimeout(() => {
+            setSuccess("");
+          }, 1000);
+        },
+        (error) => {
+          setError("Message was not submitted. Please try again.");
+        }
+      );
+  };
+
+
   return (
     <div className='' style={{overflowX:"hidden !important"}}>
     <section className='flex justify-center bannerContact absolute h-auto pb-20  rounded-b-3xl'>
@@ -68,31 +126,40 @@ Reach out us
 
 
 <section className='flex justify-center mt-20'>
-<main className='md:w-[90%] flex justify-start w-[95%] widthContact '>
-  <form action="" className='lg:w-[50%] w-full flex flex-col gap-5'>
+<main className='md:w-[90%] flex justify-start flex-col  w-[95%] widthContact '>
+  <form ref={form} onSubmit={sendEmail} className='lg:w-[50%] w-full flex flex-col gap-5'>
     <div className='flex flex-col gap-3'>
       
     <label htmlFor="" className='text-[18px] font-semibold'>Full Name</label>
-    <input type="text" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='John Smith' name="" id="" />
+    <input type="text" name='from_name' value={formData.from_name} onChange={handleChange} className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='John Smith' id="" />
     </div>
     <div className='flex flex-col gap-3'>
       
       <label htmlFor="" className='text-[18px] font-semibold'>Email</label>
-      <input type="email" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='example@email.com' name="" id="" />
+      <input type="email" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='example@email.com' name="from_email"
+            value={formData.from_email}
+            onChange={handleChange} id="" />
       </div>
       <div className='flex flex-col gap-3'>
       
       <label htmlFor="" className='text-[18px] font-semibold'>Phone Number</label>
-      <input type="" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='1800-000-0000' name="" id="" />
+      <input type="" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2' placeholder='1800-000-0000' name="from_phone" id=""
+            value={formData.from_phone}
+            onChange={handleChange}  />
       </div>
       <div className='flex flex-col gap-3'>
       
       <label htmlFor="" className='text-[18px] font-semibold'>Message</label>
-      <textarea name="" className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2 h-[200px]' placeholder='Enter your message here ...' id=""></textarea>
+      <textarea  className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2 h-[200px]' placeholder='Enter your message here ...' id="" name="message" value={formData.message} onChange={handleChange}></textarea>
       </div>
-      <button className='bg-primary flex justify-center items-center gap-3 text-white font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded'>Send Message <span><SiMinutemailer className='text-xl'/></span></button>
+      <button type='submit' className='bg-primary flex justify-center items-center gap-3 text-white font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded'>Send Message <span><SiMinutemailer className='text-xl'/></span></button>
 
   </form>
+  <div className='lg:w-[50%] w-full flex justify-center'>
+    
+  {error && <p className="text-red-500 text-center pt-5 font-light">{error}</p>}
+      {success?<p className="text-green-500 text-center pt-5 font-light">Message sent successfully!</p>:''}
+  </div>
 </main></section>
 
   </div>
