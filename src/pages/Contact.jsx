@@ -6,12 +6,18 @@ import { Link } from 'react-router-dom'
 import { IoMenuSharp } from 'react-icons/io5';
 import { RiMailSendLine } from 'react-icons/ri';
 import { SiMinutemailer } from 'react-icons/si';
-import { PiPhoneCall } from 'react-icons/pi';
+import { PiCardsThreeFill, PiPhoneCall } from 'react-icons/pi';
 import { ImOffice } from 'react-icons/im';
+import { MdContactPage, MdHomeFilled } from 'react-icons/md';
+import { RxCross2 } from 'react-icons/rx';
 
 const Contact = () => {
 
 
+const [click,setClick]=useState(false);
+  const mobileMenu=()=>{
+    setClick(!click); 
+    }
   
   const form = useRef();
   const [formData, setFormData] = useState({
@@ -70,22 +76,36 @@ const Contact = () => {
   return (
     <div className='' style={{overflowX:"hidden !important"}}>
     <section className='flex justify-center bannerContact absolute h-auto pb-20  rounded-b-3xl'>
-<main className='md:w-[90%] w-[95%] widthContact text-white'>
-<nav className='justify-between   flex items-center pt-5 text-[17px] font-medium' >
+<main className='md:w-[90%] w-[95%]  widthContact text-white'>
+<nav className={`justify-between textBanner ${click && `bg-white rounded-t-xl px-3`} transition-all duration-300 flex items-center pt-5 text-[17px] font-medium`} >
 
-<Link to='/cards' className='logo textBanner'><img src={Xcard} alt="" className='w-36'/></Link>
- <ul className=' gap-10 xl:flex hidden items-center'>
-  <Link to='/' className='cursor-pointer textBanner'> <li className='l1'>Home</li></Link>
-   <Link to='/cards'  className='cursor-pointer textBanner'>
-   <li className='l2 textBanner'>Cards</li></Link>
-  <Link to='/contact '  className='cursor-pointer textBanner'> <li className='l3 textBanner'>Contact</li></Link>
- </ul>
- <div className='navButton textBanner'>
-   
- <button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary  textBanner'>Get Started</button>
- <button className='bg-hover text-white text-xl p-2 xl:hidden rounded-xl textBanner'><IoMenuSharp/></button>
- </div>
+<Link to='/' className='logo textBanner'><img src={Xcard} alt="" className='w-36'/></Link>
+  <ul className=' gap-10 xl:flex hidden items-center'>
+   <Link to='/' className='cursor-pointer textBanner'> <li className='l1'>Home</li></Link>
+    <Link to='/cards' className='textBanner'>
+    <li className='l2 textBanner'>Cards</li></Link>
+      <Link to='/contact ' className='textBanner'> <li className='l3 textBanner'>Contact</li></Link>
+  </ul>
+  <div className='navButton flex gap-5'>
+    
+  <button className='px-7 py-3
+cursor-pointer text-hover xl:block hidden textBanner hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
+  <button className='px-7 py-3 cursor-pointer textBanner text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
+  <button className='bg-hover 
+cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl transition-all duration-300 textBanner' onClick={mobileMenu}>{click?<RxCross2 />
+:<IoMenuSharp/>} </button>
+  </div>
 </nav>
+{click && (<div className='absolute w-[100%] flex justify-center left-0'><div style={{zIndex:"100000"}} className="w-[95%] md:w-[90%]  transition-all duration-300 h-auto  rounded-b-xl  flow bg-white relative top-0">
+             <div className="flex flex-col gap-2 w-[100%] h-full p-5">
+              <div className='flex gap-10 md:justify-between'>
+              <Link to='/'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3 textBanner'><span><MdHomeFilled className='text-hover'/></span> Home</h2> </Link>
+              <Link to='/cards'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3 textBanner'><span><PiCardsThreeFill/></span> Cards</h2></Link>
+              <Link to='/contact'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3 textBanner'><span><MdContactPage/></span> Contact</h2></Link></div>
+              
+    
+             </div>
+            </div></div>)}
 
 <main className='flex mt-20 justify-center flex-col items-center w-full '>
 <h1 className='md:text-8xl text-5xl textBanner pb-20 font-extrabold'>

@@ -25,6 +25,9 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from 'react-router-dom';
+import { MdContactPage, MdHomeFilled } from 'react-icons/md';
+import { PiCardsThreeFill } from 'react-icons/pi';
+import { RxCross2 } from 'react-icons/rx';
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -244,10 +247,10 @@ setClick(!click);
   return (
     <div className='' style={{overflowX:"hidden"}} >
      <section className='flex justify-center bannerHeight h-[1207px] md:h-auto lg:h-auto lg:pb-10 xl:pb-0  w-full rounded-b-3xl' style={{backgroundImage:"linear-gradient(to right,#6C48B6 10%,#A071CA 50%   )"}}>
-<main className='md:w-[90%] w-[95%] widthHome text-white'>
-<nav className='justify-between  flex items-center pt-5 text-[17px] font-medium' >
+<main className= {`md:w-[90%] w-[95%] widthHome text-white  `}>
+<nav className={`justify-between ${click && `bg-white rounded-t-xl px-3`} transition-all duration-300 flex items-center pt-5 text-[17px] font-medium`} >
 
-<Link to='/cards' className='logo '><img src={Xcard} alt="" className='w-36'/></Link>
+<Link to='/' className='logo '><img src={Xcard} alt="" className='w-36'/></Link>
   <ul className=' gap-10 xl:flex hidden items-center'>
    <Link to='/' className='cursor-pointer'> <li className='l1'>Home</li></Link>
     <Link to='/cards'>
@@ -260,14 +263,19 @@ setClick(!click);
 cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
   <button className='px-7 py-3 cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
   <button className='bg-hover 
-cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl' onClick={mobileMenu}><IoMenuSharp/></button>
+cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl transition-all duration-300' onClick={mobileMenu}>{click?<RxCross2 />
+:<IoMenuSharp/>} </button>
   </div>
 </nav>
-{click && (<div className='absolute w-[100%]'><div style={{zIndex:"100000"}} className="w-[90%] h-[50vh]  rounded-b-xl  flow bg-white relative top-0">
+{click && (<div className='absolute w-[100%] flex justify-center left-0'><div style={{zIndex:"100000"}} className="w-[95%]  transition-all duration-300 h-auto  rounded-b-xl  flow bg-white relative top-0">
              <div className="flex flex-col gap-2 w-[100%] h-full p-5">
-              <Link to='/'><h2 className='text-primary font-bold text-2xl w-full'>Home</h2> <span></span></Link>
-              <Link to='/cards'><h2 className='text-primary font-bold text-2xl w-full'>Cards</h2></Link>
-              <Link to='/contact'><h2 className='text-primary font-bold text-2xl w-full'>Contact</h2></Link>
+              <Link to='/'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><MdHomeFilled className='text-hover'/></span> Home</h2> </Link>
+              <Link to='/cards'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><PiCardsThreeFill/></span> Cards</h2></Link>
+              <Link to='/contact'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><MdContactPage/></span> Contact</h2></Link>
+    
+    <button className='px-7 py-3
+  cursor-pointer text-white  hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary '>Sign Up</button>
+    <button className='px-7 py-3 cursor-pointer text-hover hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
              </div>
             </div></div>)}
 
