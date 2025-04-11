@@ -299,7 +299,7 @@ cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl transition-all durati
 :<IoMenuSharp/>} </button>
   </div>
 </nav>
-{click && (<div className='absolute w-[100%] flex justify-center left-0'><div style={{zIndex:"100000"}} className="w-[95%]  transition-all duration-300 h-auto  rounded-b-xl  flow bg-white relative top-0">
+{click && (<div className='absolute w-[100%] flex justify-center left-0'><div style={{zIndex:"100000"}} className="w-[95%] md:w-[90%]  transition-all duration-300 h-auto  rounded-b-xl  flow bg-white relative top-0">
              <div className="flex flex-col gap-2 w-[100%] h-full p-5">
               <Link to='/'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><MdHomeFilled className='text-hover'/></span> Home</h2> </Link>
               <Link to='/cards'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><PiCardsThreeFill/></span> Cards</h2></Link>
