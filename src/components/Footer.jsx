@@ -53,10 +53,10 @@ const Footer = () => {
     <img src={logo} alt="" className='w-44 pb-5'/>
     
     <div className='flex text-4xl gap-4'>
-<a target='_blank' href='https://www.linkedin.com/company/metaxpayments/'><FaLinkedin/></a>
-<a target='_blank' href='https://www.facebook.com/MetaXPayments'><FaFacebookSquare /></a>
-<a target='_blank' href='https://www.instagram.com/metaxpayments/'><RiInstagramFill /></a>
-<a target='_blank' href='https://x.com/@MetaXPayments'><FaSquareXTwitter /></a>
+<a target='_blank ' href='https://www.linkedin.com/company/metaxpayments/'><FaLinkedin/></a>
+<a target='_blank ' href='https://www.facebook.com/MetaXPayments'><FaFacebookSquare /></a>
+<a target='_blank ' href='https://www.instagram.com/metaxpayments/'><RiInstagramFill /></a>
+<a target='_blank ' href='https://x.com/@MetaXPayments'><FaSquareXTwitter /></a>
     </div>
     <p className='font-light pt-10 text-sm'>USDT services for XCard are provided by Metax Payments Ltd, incorporated in Canada (BC1406436), is Registered at 28 19628, 55A Avenue, Langley, British Columbia, V3A 3X2. The company is duly registered as a Money Services Business with FINTRAC under registration number M23579425, ensuring adherence to Canadian financial laws and regulations.
 <br /><br />
