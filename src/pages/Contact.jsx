@@ -119,19 +119,19 @@ Reach out us
 <RiMailSendLine className='text-2xl'/>
 <p className='text-xl'>Support Email</p>
 <p className=''>hello@example.com</p>
-<button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Email Us</button>
+<button className='bg-white text-black  font-bold w-full py-3 cursor-pointer transition-all duration-300 mt-7 hover:text-white hover:bg-hover rounded-xl'>Email Us</button>
 </div>
 <div className='bg-[#9a60ff85] textBanner text-white rounded-xl flex flex-col gap-3 p-5'>
 <PiPhoneCall className='text-2xl'/>
 <p className='text-xl'>Phone Number</p>
 <p className=''>1800-000-0000</p>
-<button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Call Us</button>
+<button className='bg-white text-black font-bold w-full py-3 mt-7 cursor-pointer transition-all duration-300  hover:text-white hover:bg-hover rounded-xl'>Call Us</button>
 </div>
-<div className='bg-[#9a60ff85] textBanner text-white rounded-xl md:col-span-2 col-span-1 lg:col-span-1 flex flex-col gap-3 p-5'>
+<div className='bg-[#9a60ff85] textBanner text-white rounded-xl md:col-span-2   col-span-1 lg:col-span-1 flex flex-col gap-3 p-5'>
 <ImOffice className='text-2xl'/>
 <p className='text-xl'>Headquarters</p>
 <p className=''>12 Cherry Street, NJ, 10384</p>
-<button className='bg-white text-black font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded-xl'>Visit Us</button>
+<button className='bg-white text-black font-bold w-full py-3 mt-7 cursor-pointer  transition-all duration-300  hover:text-white hover:bg-hover rounded-xl'>Visit Us</button>
 </div>
 </div>
 </main>
@@ -174,7 +174,7 @@ Reach out us
       <label htmlFor="" className='text-[18px] font-semibold'>Message</label>
       <textarea  className='border-[1px] border-[rgba(0,0,0,0.3)] outline-0 p-2 h-[200px]' placeholder='Enter your message here ...' id="" name="message" value={formData.message} onChange={handleChange}></textarea>
       </div>
-      <button type='submit' className='bg-primary flex justify-center items-center gap-3 text-white font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover rounded'>Send Message <span><SiMinutemailer className='text-xl'/></span></button>
+      <button type='submit' className='bg-primary cursor-pointer group transition-all duration-500 flex justify-center items-center gap-3 text-white font-bold w-full py-3 mt-7 hover:text-white hover:bg-hover hover:tracking-wider rounded '>Send Message <span><SiMinutemailer className='text-xl group-hover:scale-[1.5] transition-all duration-500'/></span></button>
 
   </form>
   <div className='lg:w-[50%] w-full flex justify-center'>

@@ -329,7 +329,7 @@ cursor-pointer text-white  hover:text-white  hover:bg-hover text-xl transition-a
 </p>
 <div className='heroBtn'>
   
-<button className='px-7 py-3 text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Started</button>
+<button className='px-7 py-3 text-hover cursor-pointer transition-all duration-300 hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Started</button>
 </div>
 </div>
 <div className='flex h-full flex-col justify-between'>
@@ -361,7 +361,7 @@ Supports BTC, ETH, USDC, USDT, and more  & many more  virtual debit card that ne
 </p>
 <div className=' w-full flex l3 justify-center lg:justify-start'>
 
-<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Sign Up</button>
+<button className='px-7 py-3 w-fit text-hover cursor-pointer transition-all duration-300 hover:text-white hover:bg-hover text-xl rounded-full bg-secondary'>Sign Up</button>
 
 </div>
 </div>
@@ -506,7 +506,7 @@ Pay for your bills, flight tickets, or subscriptions, and shop in international 
   <li>Seamless</li>
   <li> Secure</li>
 </ul>
-<button className='px-7 py-3 w-fit text-hover hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Sign Up</button>
+<button className='px-7 py-3 w-fit text-hover cursor-pointer transition-all duration-300 hover:text-white hover:bg-hover text-xl rounded-full bg-secondary'>Sign Up</button>
 
 </div>
 </main></section>
@@ -544,7 +544,7 @@ Spend safer online  <br className=''/> with our card security measures
 {came && <h3 className='pt-5 text-[rgba(0,0,0,0.7)]  transition-all duration-300'>Add an extra layer of security to prevent unauthorized access to your accounts.</h3>}
 </div>
 </div>
-<button className='px-7 py-3 w-fit text-white hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary'>Sign Up</button>
+<button className='px-7 py-3 w-fit text-white hover:text-white cursor-pointer transition-all duration-300 hover:bg-hover text-xl  rounded-full bg-[rgba(0,0,0)]'>Sign Up</button>
 
 </div>
 <div className='lg:w-[50%] flex justify-center  items-center'>
@@ -565,7 +565,7 @@ Spend safer online  <br className=''/> with our card security measures
 </h2>
 <div className='sec3Btn'>
     
-<button className='px-7 py-3 text-hover xl:block hidden hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Sign Up</button>
+<button className='px-7 py-3 text-hover cursor-pointer transition-all duration-300 hover:tracking-wider xl:block hidden hover:text-white hover:bg-hover text-xl rounded-full bg-secondary '>Sign Up</button>
 </div>
 </div>
 <div className='grid grid-cols-1 md:grid-cols-2 gap-32 '>
