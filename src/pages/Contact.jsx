@@ -76,8 +76,8 @@ const [click,setClick]=useState(false);
   return (
     <div className='' style={{overflowX:"hidden !important"}}>
     <section className='flex justify-center bannerContact absolute h-auto pb-20  rounded-b-3xl'>
-<main className='md:w-[90%] w-[95%]  widthContact text-white'>
-<nav className={`justify-between textBanner ${click && `bg-white rounded-t-xl px-3`} transition-all duration-300 flex items-center pt-5 text-[17px] font-medium`} >
+<main className='md:w-[90%] w-[95%] bgContactNav widthContact text-white'>
+<nav className={`justify-between   textBanner ${click && `bg-white rounded-t-xl px-3 border-b-1 border-[rgba(0,0,0,0.2)] pb-3`} transition-all duration-300 flex items-center pt-5 text-[17px] font-medium`} >
 
 <Link to='/' className='logo textBanner'><img src={Xcard} alt="" className='w-36'/></Link>
   <ul className=' gap-10 xl:flex hidden items-center'>
@@ -98,12 +98,14 @@ cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl transition-all durati
 </nav>
 {click && (<div className='absolute w-[100%] flex justify-center left-0'><div style={{zIndex:"100000"}} className="w-[95%] md:w-[90%]  transition-all duration-300 h-auto  rounded-b-xl  flow bg-white relative top-0">
              <div className="flex flex-col gap-2 w-[100%] h-full p-5">
-              <div className='flex justify-between'>
-              <Link to='/'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3 textBanner'><span><MdHomeFilled className='text-hover'/></span> Home</h2> </Link>
-              <Link to='/cards'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3 textBanner'><span><PiCardsThreeFill/></span> Cards</h2></Link>
-              <Link to='/contact'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3 textBanner'><span><MdContactPage/></span> Contact</h2></Link></div>
+              <Link to='/'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><MdHomeFilled className='text-hover'/></span> Home</h2> </Link>
+              <Link to='/cards'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><PiCardsThreeFill/></span> Cards</h2></Link>
+              <Link to='/contact'><h2 className='text-hover font-bold text-xl w-full flex items-center gap-3'><span><MdContactPage/></span> Contact</h2></Link>
               
     
+  <button className='px-7 py-3
+cursor-pointer text-white  hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-primary '>Sign Up</button>
+  <button className='px-7 py-3 cursor-pointer text-hover  hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
              </div>
             </div></div>)}
 

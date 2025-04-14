@@ -22,8 +22,11 @@
 }
 .textBanner{
 
-    z-index: 100000;
+    z-index: 1000;
 }
 .overContact{
     z-index: 10;
+}
+.bgContactNav{
+    z-index: 100000 !important;
 }
