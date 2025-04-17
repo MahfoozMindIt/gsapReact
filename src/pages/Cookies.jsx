@@ -38,57 +38,93 @@ const mobileMenu=()=>{
            </div></div>)}</main></section>
            
            <section className='flex justify-center  w-full rounded-b-3xl pt-20' >
-<main className='md:w-[90%] w-[95%] widthHome text-center'>
-    <h1 className='text-primary md:text-8xl text-5xl font-extrabold pb-10 lg:pb-16'>Cookies</h1>
+<main className='md:w-[90%] w-[95%] widthHome '>
+    <h1 className='text-primary md:text-8xl text-5xl font-extrabold pb-10 lg:pb-16'>Cookies Policy</h1>
     <p>
-    Xcard, a business corporation registered under Incorporation Number BC1406436 in British Columbia, Canada, operates at 28 19628, 55A Avenue, Langley, British Columbia, V3A 3X2 Canada. Additionally, Xcard is registered with FINTRAC in Canada under MSB registration number M23579425, offering specified services such as money transferring, dealing in virtual currencies, and payment service provider services. This Cookie Policy elucidates the nature and usage of cookies concerning your interaction with Xcard's website and the services or products provided through it (collectively, Services). Employing cookies allows us to differentiate each user of the Services (referred to as "User" or "You"). This differentiation enhances your browsing and service usage experience, contributing to the continuous improvement of our Services. For additional details about this policy, kindly reach out to us at
+        <h3 className='text-3xl font-extrabold pb-2'>Introduction</h3>
+   <p className='pb-4'>This Cookie Policy outlines how myxpd.app ("XPD", "we", "our", or "us") uses cookies and similar technologies to recognize you when you visit our website at https://myxpd.app (the "Website"). It explains what these technologies are, why we use them, and your rights to control our use of them.</p>
+   <p className='pb-4'>myxpd.app is operated by MetaX, a money services business (MSB) corporation registered in British Columbia, Canada (Incorporation Number BC1406436), and regulated by FINTRAC (MSB Registration No. M23579425). MetaX provides digital financial services including the XPD mobile app and globally accepted virtual debit cards.</p>
+   <p>
+By using our website or services, you consent to our use of cookies as described in this policy.
+</p>
     </p>
     <p className='pt-10'>
-    What is a cookie?
-A cookie is a small file comprising information, letters, and numbers that we store on your browser, computer hard drive, mobile device, or tablet, subject to your agreement. These cookies carry information transferred to your computer's hard drive, mobile device, or tablet.
-
-The term "cookie" in this context denotes the software or technology capable of collecting, transmitting, or recognizing information about your visits to and usage of the Services.
-
-Types of Cookies We Use
-Strictly Necessary Cookies: These cookies are essential for the proper functioning of our website. They include, for instance, cookies that facilitate your access to secure areas of our website. Your consent is not required for these cookies, as they are placed automatically. However, it's crucial for you to be aware of them. While you can block these cookies by adjusting your internet browser settings (as detailed below), please note that such action may impede the proper functioning of our services, such as creating an account.
-
-Analytical or Performance Cookies: These cookies enable us to recognize and count the number of visitors, allowing us to observe how visitors navigate our website. This information aids us in enhancing the functionality of our website, ensuring users easily find what they are looking for. These cookies collect anonymous information, devoid of personal details, to provide insights into user interactions for statistical purposes.
-
-Functionality Cookies: Utilized to identify you upon your return to our services, functionality cookies enable us to personalize content, address you by name, and remember your preferences, such as language or region choices.
-
-Targeting/Marketing Cookies: Recording your visit details, page interactions, and followed links, these cookies help tailor our website content and advertising to align with your interests. This information may also be shared with third parties for similar purposes. Without these cookies, the online adverts you encounter may be less relevant to your interests.
-
-Consent to Our Use of Cookies: Cookies are stored on your device after you have been duly notified and provided consent, except in the case of strictly necessary or functional cookies, where explicit consent is not required. By clicking "accept" in response to the cookie notification message that appears on your screen, you agree to the placement of cookies on your browser, computer hard drive, mobile device, tablet, or any other device used to access our website.
-
-You have the option to set your browser to refuse some or all browser cookies or receive alerts when websites attempt to set or access cookies, as detailed in your browser settings (refer to more information below).
-
-Important Note: Disabling or refusing cookies on our website may render certain parts inaccessible or disrupt their proper functionality. To delve deeper into cookies, including management and deletion procedures, please visit www.allaboutcookies.org.
-
-Managing and Disabling Cookies: A User Guide
-Disabling Cookies
-
-You can easily disable and/or refuse cookies through one of the following methods:
-
-1. Message Prompt: Reject the use of cookies when a relevant message appears during your browsing experience.
-
-2. Browser Settings: Activate your browser's settings to refuse the setting of all or selected cookies.
-
-However, it's important to note that blocking all cookies, including essential ones, might limit your access to certain areas or functionalities on our website.
-
-Avoiding Cookies Altogether
-
-If you prefer not to receive cookies, take the following steps:
-
-1. Browser Settings Adjustment: Configure your browser settings to either automatically block cookies or prompt for permission each time a website attempts to save a cookie on your computer or mobile device.
-
-2. Deletion of Downloaded Cookies: Delete cookies that have already been downloaded through your web browser. Visit https://www.aboutcookies.org/how-to-delete-cookies/ for detailed information.
-
-Changing Cookie Settings
-Most internet browsers provide options to change cookie settings, typically located in the 'options' or 'preferences' menu. Utilize the 'help' option in your browser or refer to specific pages on cookie settings for popular browsers such as Internet Explorer, Firefox, Chrome, or Safari.
-
-Policy Updates
-This Cookie Policy may undergo periodic updates, reflecting changes to our website, compliance with applicable laws, or alterations to the cookies used or their functionalities. In cases of significant changes, we will strive to notify you via email, but we recommend periodically reviewing this policy to stay informed about how our website utilizes cookies..
+        <h3 className='text-3xl font-extrabold pb-2'>1. What are cookies?</h3>
+   <p className='pb-4'>Cookies are small data files stored on your computer, mobile phone, tablet, or other device when you visit a website. Cookies are widely used to make websites work more efficiently and to provide information to the site owners.</p>
+   <p className='pb-4'>The term “cookie” in this policy also includes similar tracking technologies such as web beacons, pixels, or SDKs.</p>
     </p>
+    <p className='pt-10'>
+        <h3 className='text-3xl font-extrabold pb-2'>2. Types of Cookies We Use</h3>
+   <p className='pb-4'>We use the following types of cookies on myxpd.app:</p>
+   
+   <h3 className='text-2xl font-extrabold pb-2'>a. Strictly Necessary Cookies</h3>
+   <p className='pb-4'>These cookies are essential for the operation of our website and services. They enable core functionalities like account login, secure access, and payment processing. Without these cookies, some services cannot be provided.</p>
+   <h3 className='text-2xl font-extrabold pb-2'>b. Performance and Analytics Cookies</h3>
+   <p className='pb-4'>These cookies help us understand how users interact with our website, such as counting visits and traffic sources. The information collected is aggregated and anonymous.</p>
+   <h3 className='text-2xl font-extrabold pb-2'>c. Functionality Cookies</h3>
+   <p className='pb-4'>These cookies remember your preferences and choices (e.g., language or region), allowing us to personalize your experience on our website.</p>
+   
+   <h3 className='text-2xl font-extrabold pb-2'>d. Targeting and Marketing Cookies</h3>
+   <p className='pb-4'>
+These cookies track your browsing behavior so we can provide content and ads more relevant to you. We may share this information with advertising partners such as Google or Facebook.
+</p>
+    </p>
+    <p className='pt-10'>
+        <h3 className='text-3xl font-extrabold pb-2'>3. Why Do We Use Cookies?</h3>
+   <p className='pb-4'>We use cookies to:</p>
+   <p className='pb-4'>- Enhance the functionality and user experience of our website and mobile app <br />
+- Authenticate users and secure accounts <br />
+- Analyze performance and improve our services <br />
+- Deliver tailored content and advertisements <br />
+- Facilitate interaction with third-party services such as payment providers and analytics platforms
+</p>
+    </p>
+
+    <p className='pt-10'>
+        <h3 className='text-3xl font-extrabold pb-2'>4. Consent and Cookie Preferences</h3>
+   <p className='pb-4'>When you visit myxpd.app for the first time, we will request your consent to place cookies via a cookie banner. By clicking “Accept” or continuing to use the Website, you consent to our use of cookies as outlined in this Policy.</p>
+   <p className='pb-4'>You can change or withdraw your consent at any time by accessing the Cookie Settings on our Website or configuring your browser settings.
+</p>
+    </p>
+    <p className='pt-10'>
+        <h3 className='text-3xl font-extrabold pb-2'>5. Managing and Disabling Cookies</h3>
+   <p className='pb-4'>You can disable or block cookies using your browser settings. However, some cookies are essential to the functioning of our services, and disabling them may result in limited access or reduced functionality.</p>
+   <p className='pb-4'>Visit these links for more browser-specific instructions:
+</p>  <p className='pb-4'>- Google Chrome: <a href="https://support.google.com/accounts/answer/6141">https://support.google.com/accounts/answer/6141</a>6 <br />
+- Mozilla Firefox: <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies">https://support.mozilla.org/en-US/kb/enable-and-disable-cookies</a> <br />
+- Safari: <a href="https://support.apple.com/en-us/HT201265">https://support.apple.com/en-us/HT201265</a> <br />
+- Microsoft Edge: <a href='https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09'>https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09</a><br />
+You may also visit <a href="www.allaboutcookies.org">www.allaboutcookies.org</a> for more guidance on cookie management.
+
+</p>
+    </p>
+
+
+    <p className='pt-10'>
+        <h3 className='text-3xl font-extrabold pb-2'>6. Third-Party Cookies</h3>
+   <p className='pb-4'>Some cookies on our website are placed by third parties, including advertising networks and external analytics services. These third parties may use cookies to collect information about your online activities over time and across different websites.</p>
+   <p className='pb-4'>Examples include:<br />- Google Analytics <br />
+- Meta (Facebook) Pixel <br />
+- Stripe (payment integration)
+
+</p>
+<p className='pb-4'>We do not control these cookies. You should refer to the respective privacy and cookie policies of these third-party services for more information..</p>
+    </p>
+    <p className='pt-10'>
+        <h3 className='text-3xl font-extrabold pb-2'>7. Updates to This Cookie Policy</h3>
+   <p className='pb-4'>We may update this Cookie Policy from time to time to reflect changes in technology, data protection laws, or our business operations. We encourage you to review this policy periodically.</p>
+   <p className='pb-4'>If we make significant changes, we will notify you the user through a prominent notice on our website or contacting you directly.
+</p>
+    </p>
+
+    <p className='pt-10'>
+        <h3 className='text-3xl font-extrabold pb-2'>8. Contact Us</h3>
+   <p className='pb-4'>If you have any questions or concerns about this Cookie Policy, please contact us at:</p>
+   <p className='pb-4'>Email: support@myxpd.app <br />
+   Website: <a href="https://myxpd.app">https://myxpd.app</a>
+</p>
+    </p>
+
 </main></section>
            
            </div>
