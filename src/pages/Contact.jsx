@@ -118,7 +118,7 @@ Reach out us
 <div className='bg-[#9a60ff85] text-white textBanner rounded-xl flex flex-col gap-3 p-5'>
 <RiMailSendLine className='text-2xl'/>
 <p className='text-xl'>Support Email</p>
-<p className=''>support@metaxpayments.com</p>
+<p className=''>support@myxpd.app</p>
 <button className='bg-white text-black  font-bold w-full py-3 cursor-pointer transition-all duration-300 mt-7 hover:text-white hover:bg-hover rounded-xl'>Email Us</button>
 </div>
 <div className='bg-[#9a60ff85] textBanner text-white rounded-xl flex flex-col gap-3 p-5'>
