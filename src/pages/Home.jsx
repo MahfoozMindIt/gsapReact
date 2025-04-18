@@ -115,7 +115,7 @@ scrub:2,
           }
   })
 
-  tl.from('.l1,.l2,.l3,.logo,.navButton', {
+  tl.from('.l1,.l2,.l3,.logo,.navButton1,.navButton2', {
     y: -30,
     opacity: 0,
     delay: 1,
@@ -257,11 +257,13 @@ setClick(!click);
     <li className='l2'>Cards</li></Link>
       <Link to='/contact'> <li className='l3'>Contact</li></Link>
   </ul>
-  <div className='navButton flex gap-5'>
-    
+  <div className=' flex gap-5'>
+    <div className='navButton1'>
   <button className='px-7 py-3
-cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
+cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button></div>
+  <div className='navButton2'>
   <button className='px-7 py-3 cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
+  </div>
   <button className='bg-hover 
 cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl transition-all duration-300' onClick={mobileMenu}>{click?<RxCross2 />
 :<IoMenuSharp/>} </button>

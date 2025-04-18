@@ -127,7 +127,7 @@ end:"bottom 0",
           }
   })
 
-  tl.from('.l1,.l2,.l3,.logo,.navButton', {
+  tl.from('.l1,.l2,.l3,.logo,.navButton1,.navButton2', {
     y: -30,
     opacity: 0,
     delay: 1,
@@ -289,15 +289,17 @@ const mobileMenu=()=>{
     <li className='l2'>Cards</li></Link>
       <Link to='/contact'> <li className='l3'>Contact</li></Link>
   </ul>
-  <div className='navButton flex gap-5'>
-    
-  <button className='px-7 py-3
-cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button>
-  <button className='px-7 py-3 cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
-  <button className='bg-hover 
-cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl transition-all duration-300' onClick={mobileMenu}>{click?<RxCross2 />
-:<IoMenuSharp/>} </button>
-  </div>
+  <div className=' flex gap-5'>
+     <div className='navButton1'>
+   <button className='px-7 py-3
+ cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-white '>Sign Up</button></div>
+   <div className='navButton2'>
+   <button className='px-7 py-3 cursor-pointer text-hover xl:block hidden hover:text-white  hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary '>Login</button>
+   </div>
+   <button className='bg-hover 
+ cursor-pointer text-white text-xl p-2 xl:hidden rounded-xl transition-all duration-300' onClick={mobileMenu}>{click?<RxCross2 />
+ :<IoMenuSharp/>} </button>
+   </div>
 </nav>
 {click && (<div className='absolute w-[100%] flex justify-center left-0'><div style={{zIndex:"100000"}} className="w-[95%] md:w-[90%]  transition-all duration-300 h-auto  rounded-b-xl  flow bg-white relative top-0">
              <div className="flex flex-col gap-2 w-[100%] h-full p-5">
@@ -329,7 +331,7 @@ cursor-pointer text-white  hover:text-white  hover:bg-hover text-xl transition-a
 </p>
 <div className='heroBtn'>
   
-<button className='px-7 py-3 text-hover cursor-pointer transition-all duration-300 hover:text-white hover:bg-hover text-xl transition-all duration-300 rounded-full bg-secondary'>Get Started</button>
+<button className='px-7 py-3 text-hover cursor-pointer transition-all duration-300 hover:text-white hover:bg-hover text-xl  rounded-full bg-secondary'>Get Started</button>
 </div>
 </div>
 <div className='flex h-full flex-col justify-between'>
